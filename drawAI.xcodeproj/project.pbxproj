@@ -14,6 +14,8 @@
 		79BB1FCD272043620099015C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FCC272043620099015C /* ViewController.swift */; };
 		79BB1FD2272043640099015C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD1272043640099015C /* Assets.xcassets */; };
 		79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD3272043640099015C /* LaunchScreen.storyboard */; };
+		D63E3A92272067F300B4E795 /* DrawTimerBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */; };
+		D63E3A942720680900B4E795 /* DrawTimerBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E3A932720680900B4E795 /* DrawTimerBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		79BB1FD1272043640099015C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79BB1FD4272043640099015C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79BB1FD6272043640099015C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawTimerBarView.xib; sourceTree = "<group>"; };
+		D63E3A932720680900B4E795 /* DrawTimerBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTimerBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		35760F7F27205720004FEC9B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D63E3A8D272065A100B4E795 /* Draw */,
 				35760F8027205728004FEC9B /* HomeViewController */,
 			);
 			path = Scenes;
@@ -84,6 +89,31 @@
 				79BB1FD6272043640099015C /* Info.plist */,
 			);
 			path = drawAI;
+			sourceTree = "<group>";
+		};
+		D63E3A8D272065A100B4E795 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				D63E3A8E272065A900B4E795 /* Components */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		D63E3A8E272065A900B4E795 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D63E3A952720683A00B4E795 /* DrawTimerBar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D63E3A952720683A00B4E795 /* DrawTimerBar */ = {
+			isa = PBXGroup;
+			children = (
+				D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */,
+				D63E3A932720680900B4E795 /* DrawTimerBarViewController.swift */,
+			);
+			path = DrawTimerBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
+				D63E3A92272067F300B4E795 /* DrawTimerBarView.xib in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
 			);
@@ -158,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
+				D63E3A942720680900B4E795 /* DrawTimerBarViewController.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
 				79BB1FCB272043620099015C /* SceneDelegate.swift in Sources */,
 				35760F8327205746004FEC9B /* HomeViewController.swift in Sources */,

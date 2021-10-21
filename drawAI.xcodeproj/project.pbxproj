@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29A272196EC007FDC94 /* UIView+Extensions.swift */; };
+		354DE29E27219718007FDC94 /* ANView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29D27219718007FDC94 /* ANView.swift */; };
 		35760F8327205746004FEC9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35760F8127205746004FEC9B /* HomeViewController.swift */; };
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
 		35760F8A27205F9B004FEC9B /* DrawToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8927205F9B004FEC9B /* DrawToolsView.xib */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		354DE29A272196EC007FDC94 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		354DE29D27219718007FDC94 /* ANView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANView.swift; sourceTree = "<group>"; };
 		35760F8127205746004FEC9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35760F8227205746004FEC9B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		35760F8927205F9B004FEC9B /* DrawToolsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawToolsView.xib; sourceTree = "<group>"; };
@@ -45,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354DE299272196CF007FDC94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				354DE29A272196EC007FDC94 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		354DE29C2721970A007FDC94 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				354DE29D27219718007FDC94 /* ANView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		35760F7F27205720004FEC9B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +135,8 @@
 		79BB1FC7272043620099015C /* drawAI */ = {
 			isa = PBXGroup;
 			children = (
-				35760F8C272069D9004FEC9B /* Extensions */,
+				354DE29C2721970A007FDC94 /* Core */,
+				354DE299272196CF007FDC94 /* Extensions */,
 				35760F7F27205720004FEC9B /* Scenes */,
 				79BB1FC8272043620099015C /* AppDelegate.swift */,
 				79BB1FCA272043620099015C /* SceneDelegate.swift */,
@@ -202,7 +223,9 @@
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
 				35760F8E272069FE004FEC9B /* UIButton+Extensions.swift in Sources */,
 				35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */,
+				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
+				354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */,
 				79BB1FCB272043620099015C /* SceneDelegate.swift in Sources */,
 				35760F8327205746004FEC9B /* HomeViewController.swift in Sources */,
 			);

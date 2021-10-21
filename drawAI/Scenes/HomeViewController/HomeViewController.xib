@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="drawAI" customModuleProvider="target">
             <connections>
+                <outlet property="drawToolsView" destination="7D7-TG-vG0" id="Pfm-YC-pd5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +19,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R77-Ts-JQQ">
-                    <rect key="frame" x="162" y="437.5" width="90" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7D7-TG-vG0" customClass="DrawToolsView" customModule="drawAI" customModuleProvider="target">
+                    <rect key="frame" x="172" y="371" width="70" height="154"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="154" id="CuW-sw-2Cd"/>
+                        <constraint firstAttribute="width" constant="70" id="Nx4-Gn-cKe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pP-e1-PaU">
+                    <rect key="frame" x="57" y="84" width="300" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="dyM-1L-aAu"/>
+                        <constraint firstAttribute="height" constant="100" id="vgR-Ou-Rd3"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="R77-Ts-JQQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c7v-3G-oCM"/>
-                <constraint firstItem="R77-Ts-JQQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tyG-fx-xeV"/>
+                <constraint firstItem="9pP-e1-PaU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="CaT-Ih-Ahc"/>
+                <constraint firstItem="7D7-TG-vG0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NSB-V0-idF"/>
+                <constraint firstItem="9pP-e1-PaU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="abG-yy-Qho"/>
+                <constraint firstItem="7D7-TG-vG0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dBh-64-YoL"/>
             </constraints>
             <point key="canvasLocation" x="139" y="151"/>
         </view>

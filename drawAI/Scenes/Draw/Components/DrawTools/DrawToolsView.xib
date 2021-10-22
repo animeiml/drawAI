@@ -14,26 +14,62 @@
             <rect key="frame" x="0.0" y="0.0" width="70" height="154"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXy-XS-DD1">
-                    <rect key="frame" x="14.5" y="67" width="41.5" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JVm-kf-qDq">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="154"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri2-2H-Oep">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="6y5-f4-9XD"/>
+                                <constraint firstAttribute="width" constant="70" id="I8I-fQ-n7b"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" image="pencil">
+                                <color key="baseBackgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onPencilTouched:" destination="-1" eventType="touchUpInside" id="FNx-cR-wHR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A31-Qo-1GN">
+                            <rect key="frame" x="0.0" y="86" width="70" height="68"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" image="eraser">
+                                <color key="baseBackgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onEraserTouched:" destination="-1" eventType="touchUpInside" id="hjj-fd-EwW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="A31-Qo-1GN" firstAttribute="width" secondItem="ri2-2H-Oep" secondAttribute="height" multiplier="1:1" id="F6X-Et-vFP"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="linkColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="HXy-XS-DD1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TOK-Ex-XwI"/>
-                <constraint firstItem="HXy-XS-DD1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zc6-ZS-k9w"/>
+                <constraint firstItem="JVm-kf-qDq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7zk-ZQ-fug"/>
+                <constraint firstAttribute="bottom" secondItem="JVm-kf-qDq" secondAttribute="bottom" id="DPR-pc-b6m"/>
+                <constraint firstAttribute="trailing" secondItem="JVm-kf-qDq" secondAttribute="trailing" id="O8y-by-jGu"/>
+                <constraint firstItem="JVm-kf-qDq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WUX-Sp-go9"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-75.200000000000003" y="462.36881559220393"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="eraser" width="25" height="25"/>
+        <image name="pencil" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

@@ -8,17 +8,23 @@
 import Foundation
 import UIKit
 
-class DrawToolsView: UIView {
-    @IBOutlet weak var pencilButton: UIButton!
-    @IBOutlet weak var eraserButton: UIButton!
-        
+protocol DrawToolsDelegate: AnyObject {
+    func onPencilChosen()
+    func onEraserChosen()
+}
+
+class DrawToolsView: ANView {
+    weak var delegate: DrawToolsDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupButtons()
     }
     
-    private func setupButtons() {
-//        pencilButton.setCircleButton()
-//        eraserButton.setCircleButton()
+    @IBAction func onPencilTouched(_ sender: Any) {
+        delegate?.onPencilChosen()
+    }
+    
+    @IBAction func onEraserTouched(_ sender: Any) {
+        delegate?.onEraserChosen()
     }
 }

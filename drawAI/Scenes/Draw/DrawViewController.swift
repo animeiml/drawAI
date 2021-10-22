@@ -9,14 +9,21 @@ import UIKit
 
 class DrawViewController: UIViewController {
 
+    
+   
+    @IBOutlet weak var canvas: CanvasView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let canvas = CanvasView()
-        canvas.setupDrawing()
+        
+        
+        
+        
+       
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        canvas.setupDrawing()
         
     }
 

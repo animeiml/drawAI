@@ -2,13 +2,15 @@
 //  CanvasView.swift
 //  drawAI
 //
-//  Created by João Guilherme on 20/10/21.
+//  Created by João Guilherme on 21/10/21.
 //
 
 import UIKit
 import PencilKit
 
-class CanvasView: UIView {
+class CanvasView: ANView {
+
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -19,8 +21,10 @@ class CanvasView: UIView {
     func setupDrawing(){
         
         let canvasView = PKCanvasView(frame: self.bounds)
+        canvasView.drawingPolicy = .anyInput
+        canvasView.drawing = PKDrawing()
         let toolPicker = PKToolPicker.init()
-        toolPicker.setVisible(true, forFirstResponder: canvasView)
+        toolPicker.setVisible(false, forFirstResponder: canvasView)
         toolPicker.addObserver(canvasView)
         canvasView.becomeFirstResponder()
         self.addSubview(canvasView)

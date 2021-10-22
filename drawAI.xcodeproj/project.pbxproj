@@ -13,6 +13,9 @@
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
 		79B71D812721B5B400E209CD /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B71D802721B5B400E209CD /* CanvasView.swift */; };
 		79B71D832721B5D100E209CD /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D822721B5D100E209CD /* CanvasView.xib */; };
+		79B71D872722F8C400E209CD /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B71D852722F8C400E209CD /* EndViewController.swift */; };
+		79B71D882722F8C400E209CD /* EndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D862722F8C400E209CD /* EndViewController.xib */; };
+		79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */; };
 		79BB1FC9272043620099015C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FC8272043620099015C /* AppDelegate.swift */; };
 		79BB1FCB272043620099015C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FCA272043620099015C /* SceneDelegate.swift */; };
 		79BB1FCD272043620099015C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FCC272043620099015C /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 		35760F8227205746004FEC9B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		79B71D802721B5B400E209CD /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		79B71D822721B5D100E209CD /* CanvasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CanvasView.xib; sourceTree = "<group>"; };
+		79B71D852722F8C400E209CD /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		79B71D862722F8C400E209CD /* EndViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndViewController.xib; sourceTree = "<group>"; };
+		79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShadowsIntoLight-Regular.ttf"; sourceTree = "<group>"; };
 		79BB1FC5272043620099015C /* drawAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BB1FC8272043620099015C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79BB1FCA272043620099015C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 		354DE29C2721970A007FDC94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				79B71D8927230D7900E209CD /* Fonts */,
 				354DE29D27219718007FDC94 /* ANView.swift */,
 			);
 			path = Core;
@@ -70,6 +77,7 @@
 		35760F7F27205720004FEC9B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				79B71D842722F85400E209CD /* EndScene */,
 				79BB1FDC272062440099015C /* Draw */,
 				35760F8027205728004FEC9B /* HomeViewController */,
 			);
@@ -83,6 +91,23 @@
 				35760F8227205746004FEC9B /* HomeViewController.xib */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		79B71D842722F85400E209CD /* EndScene */ = {
+			isa = PBXGroup;
+			children = (
+				79B71D852722F8C400E209CD /* EndViewController.swift */,
+				79B71D862722F8C400E209CD /* EndViewController.xib */,
+			);
+			path = EndScene;
+			sourceTree = "<group>";
+		};
+		79B71D8927230D7900E209CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		79BB1FBC272043620099015C = {
@@ -202,11 +227,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B71D882722F8C400E209CD /* EndViewController.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				79BB1FE8272068EA0099015C /* DrawViewController.xib in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
 				79B71D832721B5D100E209CD /* CanvasView.xib in Resources */,
+				79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B71D872722F8C400E209CD /* EndViewController.swift in Sources */,
 				79BB1FE7272068EA0099015C /* DrawViewController.swift in Sources */,
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
 				79B71D812721B5B400E209CD /* CanvasView.swift in Sources */,

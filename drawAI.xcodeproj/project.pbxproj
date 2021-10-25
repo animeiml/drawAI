@@ -22,7 +22,6 @@
 		79BB1FCD272043620099015C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FCC272043620099015C /* ViewController.swift */; };
 		79BB1FD2272043640099015C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD1272043640099015C /* Assets.xcassets */; };
 		79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD3272043640099015C /* LaunchScreen.storyboard */; };
-		D63E3A92272067F300B4E795 /* DrawTimerBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */; };
 		D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */; };
 		D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */; };
 /* End PBXBuildFile section */
@@ -244,7 +243,6 @@
 				358D2D5327230120008233EF /* DrawViewController.xib in Resources */,
 				35760F8A27205F9B004FEC9B /* DrawToolsView.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
-				D63E3A92272067F300B4E795 /* DrawTimerBarView.xib in Resources */,
 				D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,

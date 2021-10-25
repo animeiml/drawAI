@@ -10,6 +10,7 @@ import UIKit
 class DrawViewController: UIViewController {
     @IBOutlet weak var canvasView: CanvasView!
     @IBOutlet weak var toolsView: DrawToolsView!
+    @IBOutlet weak var timerBarView: DrawTimerBarView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class DrawViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         canvasView.setupDrawing()
+        timerBarView.startTimer(progressBar: timerBarView)
     }
 }
 

@@ -3,7 +3,6 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawViewController" customModule="drawAI" customModuleProvider="target">
             <connections>
                 <outlet property="canvasView" destination="Ycz-40-8Re" id="Cgs-hi-H3e"/>
+                <outlet property="timerBarView" destination="83d-sM-vR1" id="fnd-oO-Q6k"/>
                 <outlet property="toolsView" destination="dQT-5B-eUi" id="Lca-Ev-0IT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,9 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83d-sM-vR1">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83d-sM-vR1" customClass="DrawTimerBarView" customModule="drawAI" customModuleProvider="target">
                     <rect key="frame" x="20" y="64" width="388" height="20"/>
-                    <color key="backgroundColor" name="AccentColor"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.92156862745098034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="wbZ-bw-fYQ"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="z0t-ew-6pq"/>
@@ -73,9 +73,6 @@
     </objects>
     <resources>
         <image name="folder.fill.badge.questionmark" catalog="system" width="128" height="91"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

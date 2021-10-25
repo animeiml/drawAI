@@ -9,6 +9,7 @@ import UIKit
 
 class EndViewController: UIViewController {
 
+    @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var userDraw: UIView!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
@@ -21,6 +22,10 @@ class EndViewController: UIViewController {
         homeButton.layer.cornerRadius = 23
         saveButton.layer.cornerRadius = 23
         nextButton.layer.cornerRadius = 23
+        
+        scoreView.layer.borderColor = UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 0.20).cgColor
+        scoreView.layer.borderWidth = 1
+        scoreView.layer.cornerRadius = scoreView.frame.width / 2
     }
 
 

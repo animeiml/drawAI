@@ -23,7 +23,8 @@
 		79BB1FD2272043640099015C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD1272043640099015C /* Assets.xcassets */; };
 		79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD3272043640099015C /* LaunchScreen.storyboard */; };
 		D63E3A92272067F300B4E795 /* DrawTimerBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */; };
-		D63E3A942720680900B4E795 /* DrawTimerBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E3A932720680900B4E795 /* DrawTimerBarViewController.swift */; };
+		D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */; };
+		D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,8 @@
 		79BB1FD4272043640099015C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79BB1FD6272043640099015C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawTimerBarView.xib; sourceTree = "<group>"; };
-		D63E3A932720680900B4E795 /* DrawTimerBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTimerBarViewController.swift; sourceTree = "<group>"; };
+		D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTimerBarView.swift; sourceTree = "<group>"; };
+		D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawTimerBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		35760F8627205F4D004FEC9B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D69E54D12726F55000CA7B6B /* DrawTimerBar */,
 				358D2D4B27230105008233EF /* DrawCanvas */,
 				35760F8B27205FA5004FEC9B /* DrawTools */,
 			);
@@ -133,6 +136,7 @@
 		35D57D622721BA5100D50DD2 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -170,27 +174,11 @@
 			path = drawAI;
 			sourceTree = "<group>";
 		};
-		D63E3A8D272065A100B4E795 /* Draw */ = {
+		D69E54D12726F55000CA7B6B /* DrawTimerBar */ = {
 			isa = PBXGroup;
 			children = (
-				D63E3A8E272065A900B4E795 /* Components */,
-			);
-			path = Draw;
-			sourceTree = "<group>";
-		};
-		D63E3A8E272065A900B4E795 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				D63E3A952720683A00B4E795 /* DrawTimerBar */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		D63E3A952720683A00B4E795 /* DrawTimerBar */ = {
-			isa = PBXGroup;
-			children = (
-				D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */,
-				D63E3A932720680900B4E795 /* DrawTimerBarViewController.swift */,
+				D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */,
+				D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */,
 			);
 			path = DrawTimerBar;
 			sourceTree = "<group>";
@@ -257,6 +245,7 @@
 				35760F8A27205F9B004FEC9B /* DrawToolsView.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
 				D63E3A92272067F300B4E795 /* DrawTimerBarView.xib in Resources */,
+				D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
 				358D2D4F27230105008233EF /* CanvasView.xib in Resources */,
@@ -274,6 +263,7 @@
 				358D2D5227230120008233EF /* DrawViewController.swift in Sources */,
 				358D2D4E27230105008233EF /* CanvasView.swift in Sources */,
 				35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */,
+				D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */,
 				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
 				354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */,

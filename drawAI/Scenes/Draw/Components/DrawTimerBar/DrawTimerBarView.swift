@@ -8,17 +8,20 @@
 import UIKit
 
 protocol DrawTimerBarDelegate: AnyObject {
-  func startTimer()
+  func didFinishTime()
 }
 
 class DrawTimerBarView: ANView {
     
     private var timerValue: Double = 1.0
+    private var progressLayer = CAShapeLayer()
+
+    weak var delegate: DrawTimerBarDelegate?
     
     var progress: CGFloat = 1.0 {
         didSet { setNeedsDisplay() }
     }
-    private var progressLayer = CAShapeLayer()
+    
     var color: UIColor = .blue
     
     override init(frame: CGRect) {
@@ -42,12 +45,17 @@ class DrawTimerBarView: ANView {
         layer.addSublayer(progressLayer)
     }
     
-    func startTimer(progressBar: DrawTimerBarView){
+    func startTimer() {
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){
-            _ in
+            [weak self] timer in
+            guard let self = self else { return }
+            
             if self.timerValue > 0 {
                 self.timerValue -= 0.01
-                progressBar.progress = self.timerValue
+                self.progress = self.timerValue
+            } else {
+                timer.invalidate()
+                self.delegate?.didFinishTime()
             }
         }
     }

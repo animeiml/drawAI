@@ -46,4 +46,12 @@ extension CanvasView {
         
         canvasView?.tool = selectedTool
     }
+    
+    func captureDrawImage() -> UIImage? {
+        guard let canvas: PKCanvasView = canvasView else { return nil }
+        
+        let image: UIImage = canvas.drawing.image(from: canvas.drawing.bounds, scale: 1)
+        
+        return image
+    }
 }

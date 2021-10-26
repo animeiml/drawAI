@@ -29,19 +29,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="できた!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l4-AI-aeo">
-                    <rect key="frame" x="20" y="144" width="374" height="61"/>
+                    <rect key="frame" x="20" y="144" width="374" height="60.5"/>
                     <fontDescription key="fontDescription" name="Tuffy-Bold" family="Tuffy" pointSize="48"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxv-y6-8IW">
-                    <rect key="frame" x="20" y="215" width="374" height="39"/>
+                    <rect key="frame" x="20" y="214.5" width="374" height="39"/>
                     <fontDescription key="fontDescription" name="ShadowsIntoLight" family="Shadows Into Light" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLS-aT-eNm">
-                    <rect key="frame" x="80" y="304" width="254" height="254"/>
+                    <rect key="frame" x="80" y="303.5" width="254" height="254"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-Hy-349">
                             <rect key="frame" x="0.0" y="0.0" width="254" height="254"/>

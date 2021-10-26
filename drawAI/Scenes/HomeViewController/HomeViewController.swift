@@ -8,9 +8,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    @IBOutlet weak var drawToolsView: DrawToolsView!
-
+    
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var logoView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        startButton.layer.cornerRadius = startButton.frame.height/2
+        
+        logoView.layer.cornerRadius = logoView.frame.height * 0.14
     }
 }

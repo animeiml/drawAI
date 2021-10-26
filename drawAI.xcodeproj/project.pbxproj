@@ -11,15 +11,26 @@
 		354DE29E27219718007FDC94 /* ANView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29D27219718007FDC94 /* ANView.swift */; };
 		35760F8327205746004FEC9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35760F8127205746004FEC9B /* HomeViewController.swift */; };
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
-		79B71D812721B5B400E209CD /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B71D802721B5B400E209CD /* CanvasView.swift */; };
-		79B71D832721B5D100E209CD /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D822721B5D100E209CD /* CanvasView.xib */; };
+		35760F8A27205F9B004FEC9B /* DrawToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8927205F9B004FEC9B /* DrawToolsView.xib */; };
+		358D2D4E27230105008233EF /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D2D4C27230105008233EF /* CanvasView.swift */; };
+		358D2D4F27230105008233EF /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D4D27230105008233EF /* CanvasView.xib */; };
+		358D2D5227230120008233EF /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D2D5027230120008233EF /* DrawViewController.swift */; };
+		358D2D5327230120008233EF /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D5127230120008233EF /* DrawViewController.xib */; };
+		35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7799B27206D0300606DA7 /* DrawToolsView.swift */; };
+		798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798AE173272835E9006CB063 /* FinishedViewController.swift */; };
+		798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798AE174272835E9006CB063 /* FinishedViewController.xib */; };
+		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
+		798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE178272836C7006CB063 /* Tuffy_Bold.ttf */; };
+		79B71D872722F8C400E209CD /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B71D852722F8C400E209CD /* EndViewController.swift */; };
+		79B71D882722F8C400E209CD /* EndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D862722F8C400E209CD /* EndViewController.xib */; };
+		79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */; };
 		79BB1FC9272043620099015C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FC8272043620099015C /* AppDelegate.swift */; };
 		79BB1FCB272043620099015C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FCA272043620099015C /* SceneDelegate.swift */; };
 		79BB1FCD272043620099015C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FCC272043620099015C /* ViewController.swift */; };
 		79BB1FD2272043640099015C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD1272043640099015C /* Assets.xcassets */; };
 		79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD3272043640099015C /* LaunchScreen.storyboard */; };
-		79BB1FE7272068EA0099015C /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FE5272068EA0099015C /* DrawViewController.swift */; };
-		79BB1FE8272068EA0099015C /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FE6272068EA0099015C /* DrawViewController.xib */; };
+		D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */; };
+		D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +38,19 @@
 		354DE29D27219718007FDC94 /* ANView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANView.swift; sourceTree = "<group>"; };
 		35760F8127205746004FEC9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35760F8227205746004FEC9B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		79B71D802721B5B400E209CD /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		79B71D822721B5D100E209CD /* CanvasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CanvasView.xib; sourceTree = "<group>"; };
+		798AE173272835E9006CB063 /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
+		798AE174272835E9006CB063 /* FinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishedViewController.xib; sourceTree = "<group>"; };
+		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
+		798AE178272836C7006CB063 /* Tuffy_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy_Bold.ttf; sourceTree = "<group>"; };
+		79B71D852722F8C400E209CD /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		79B71D862722F8C400E209CD /* EndViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndViewController.xib; sourceTree = "<group>"; };
+		79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShadowsIntoLight-Regular.ttf"; sourceTree = "<group>"; };
+		35760F8927205F9B004FEC9B /* DrawToolsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawToolsView.xib; sourceTree = "<group>"; };
+		358D2D4C27230105008233EF /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		358D2D4D27230105008233EF /* CanvasView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasView.xib; sourceTree = "<group>"; };
+		358D2D5027230120008233EF /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		358D2D5127230120008233EF /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawViewController.xib; sourceTree = "<group>"; };
+		35F7799B27206D0300606DA7 /* DrawToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawToolsView.swift; sourceTree = "<group>"; };
 		79BB1FC5272043620099015C /* drawAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BB1FC8272043620099015C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79BB1FCA272043620099015C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +58,9 @@
 		79BB1FD1272043640099015C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79BB1FD4272043640099015C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79BB1FD6272043640099015C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79BB1FE5272068EA0099015C /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
-		79BB1FE6272068EA0099015C /* DrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawViewController.xib; sourceTree = "<group>"; };
+		D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawTimerBarView.xib; sourceTree = "<group>"; };
+		D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTimerBarView.swift; sourceTree = "<group>"; };
+		D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawTimerBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +85,7 @@
 		354DE29C2721970A007FDC94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				79B71D8927230D7900E209CD /* Fonts */,
 				354DE29D27219718007FDC94 /* ANView.swift */,
 			);
 			path = Core;
@@ -70,6 +94,7 @@
 		35760F7F27205720004FEC9B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				79B71D842722F85400E209CD /* EndScene */,
 				79BB1FDC272062440099015C /* Draw */,
 				35760F8027205728004FEC9B /* HomeViewController */,
 			);
@@ -85,11 +110,77 @@
 			path = HomeViewController;
 			sourceTree = "<group>";
 		};
+		35760F8527205F39004FEC9B /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				358D2D5027230120008233EF /* DrawViewController.swift */,
+				358D2D5127230120008233EF /* DrawViewController.xib */,
+				35760F8627205F4D004FEC9B /* Components */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		35760F8627205F4D004FEC9B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D69E54D12726F55000CA7B6B /* DrawTimerBar */,
+				358D2D4B27230105008233EF /* DrawCanvas */,
+				35760F8B27205FA5004FEC9B /* DrawTools */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		35760F8B27205FA5004FEC9B /* DrawTools */ = {
+			isa = PBXGroup;
+			children = (
+				35760F8927205F9B004FEC9B /* DrawToolsView.xib */,
+				35F7799B27206D0300606DA7 /* DrawToolsView.swift */,
+			);
+			path = DrawTools;
+			sourceTree = "<group>";
+		};
+		358D2D4B27230105008233EF /* DrawCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				358D2D4C27230105008233EF /* CanvasView.swift */,
+				358D2D4D27230105008233EF /* CanvasView.xib */,
+			);
+			path = DrawCanvas;
+			sourceTree = "<group>";
+		};
+		35D57D622721BA5100D50DD2 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		79B71D842722F85400E209CD /* EndScene */ = {
+			isa = PBXGroup;
+			children = (
+				79B71D852722F8C400E209CD /* EndViewController.swift */,
+				79B71D862722F8C400E209CD /* EndViewController.xib */,
+			);
+			path = EndScene;
+			sourceTree = "<group>";
+		};
+		79B71D8927230D7900E209CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				798AE178272836C7006CB063 /* Tuffy_Bold.ttf */,
+				798AE177272836C7006CB063 /* Tuffy.ttf */,
+				79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		79BB1FBC272043620099015C = {
 			isa = PBXGroup;
 			children = (
 				79BB1FC7272043620099015C /* drawAI */,
 				79BB1FC6272043620099015C /* Products */,
+				35D57D622721BA5100D50DD2 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,31 +208,18 @@
 			path = drawAI;
 			sourceTree = "<group>";
 		};
-		79BB1FDC272062440099015C /* Draw */ = {
+		D69E54D12726F55000CA7B6B /* DrawTimerBar */ = {
 			isa = PBXGroup;
 			children = (
+				D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */,
+				D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */,
 				79BB1FE5272068EA0099015C /* DrawViewController.swift */,
 				79BB1FE6272068EA0099015C /* DrawViewController.xib */,
+				798AE173272835E9006CB063 /* FinishedViewController.swift */,
+				798AE174272835E9006CB063 /* FinishedViewController.xib */,
 				79BB1FDD2720628C0099015C /* Components */,
 			);
-			path = Draw;
-			sourceTree = "<group>";
-		};
-		79BB1FDD2720628C0099015C /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				79BB1FDE272064010099015C /* DrawCanvas */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		79BB1FDE272064010099015C /* DrawCanvas */ = {
-			isa = PBXGroup;
-			children = (
-				79B71D802721B5B400E209CD /* CanvasView.swift */,
-				79B71D822721B5D100E209CD /* CanvasView.xib */,
-			);
-			path = DrawCanvas;
+			path = DrawTimerBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +280,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358D2D5327230120008233EF /* DrawViewController.xib in Resources */,
+				35760F8A27205F9B004FEC9B /* DrawToolsView.xib in Resources */,
+				79B71D882722F8C400E209CD /* EndViewController.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
+				D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */,
+				798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
-				79BB1FE8272068EA0099015C /* DrawViewController.xib in Resources */,
+				798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
-				79B71D832721B5D100E209CD /* CanvasView.xib in Resources */,
+				358D2D4F27230105008233EF /* CanvasView.xib in Resources */,
+				798AE179272836C7006CB063 /* Tuffy.ttf in Resources */,
+				79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,9 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B71D872722F8C400E209CD /* EndViewController.swift in Sources */,
 				79BB1FE7272068EA0099015C /* DrawViewController.swift in Sources */,
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
-				79B71D812721B5B400E209CD /* CanvasView.swift in Sources */,
+				358D2D5227230120008233EF /* DrawViewController.swift in Sources */,
+				358D2D4E27230105008233EF /* CanvasView.swift in Sources */,
+				35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */,
+				D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */,
+				798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */,
 				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
 				354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */,

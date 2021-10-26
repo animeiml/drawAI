@@ -8,10 +8,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    @IBOutlet weak var drawToolsView: DrawToolsView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-
 }

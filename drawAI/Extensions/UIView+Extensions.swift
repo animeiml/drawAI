@@ -15,3 +15,16 @@ extension UIView {
         bottomAnchor.constraint(equalTo: other.bottomAnchor).isActive = true
     }
 }
+
+@IBDesignable extension UIView {
+    @IBInspectable var isRounded : Bool {
+        set {
+            let radius: CGFloat = newValue ? self.frame.height/2 : self.layer.cornerRadius
+            self.layer.cornerRadius = radius
+            self.layer.masksToBounds = true
+        }
+        get {
+            return self.isRounded
+        }
+    }
+}

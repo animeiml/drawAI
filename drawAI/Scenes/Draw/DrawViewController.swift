@@ -8,33 +8,27 @@
 import UIKit
 
 class DrawViewController: UIViewController {
-
+    @IBOutlet weak var canvasView: CanvasView!
+    @IBOutlet weak var toolsView: DrawToolsView!
+    @IBOutlet weak var timerBarView: DrawTimerBarView!
     
-   
-    @IBOutlet weak var canvas: CanvasView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-       
-        // Do any additional setup after loading the view.
+        toolsView.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        canvas.setupDrawing()
-        
+        canvasView.setupDrawing()
+        timerBarView.startTimer(progressBar: timerBarView)
     }
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension DrawViewController: DrawToolsDelegate {
+    func onPencilChosen() {
+        canvasView.chooseTool(.pencil)
     }
-    */
-
+    
+    func onEraserChosen() {
+        canvasView.chooseTool(.eraser)
+    }
 }

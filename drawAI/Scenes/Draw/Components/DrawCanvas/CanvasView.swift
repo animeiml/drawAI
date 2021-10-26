@@ -9,25 +9,41 @@ import UIKit
 import PencilKit
 
 class CanvasView: ANView {
-
+    private var canvasView: PKCanvasView?
     
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    private let pencilTool: PKInkingTool = PKInkingTool(.pencil, color: .black)
+    private let eraserTool: PKEraserTool = PKEraserTool(.bitmap)
+    
+    enum CanvasTool {
+        case pencil
+        case eraser
     }
-    */
+    
+    override func awakeFromNib() {
+        canvasView = PKCanvasView(frame: self.bounds)
+    }
+}
+
+extension CanvasView {
     func setupDrawing(){
+        guard let canvasView: PKCanvasView = canvasView else { return }
         
-        let canvasView = PKCanvasView(frame: self.bounds)
         canvasView.drawingPolicy = .anyInput
         canvasView.drawing = PKDrawing()
-        let toolPicker = PKToolPicker.init()
-        toolPicker.setVisible(false, forFirstResponder: canvasView)
-        toolPicker.addObserver(canvasView)
-        canvasView.becomeFirstResponder()
+                
         self.addSubview(canvasView)
     }
 
+    func chooseTool(_ newTool: CanvasTool) {
+        let selectedTool: PKTool
+        
+        switch newTool {
+        case .pencil:
+            selectedTool = pencilTool
+        case .eraser:
+            selectedTool = eraserTool
+        }
+        
+        canvasView?.tool = selectedTool
+    }
 }

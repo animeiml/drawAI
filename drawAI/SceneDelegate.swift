@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         window?.frame = UIScreen.main.bounds
-        window?.rootViewController = EndViewController()
+        window?.rootViewController = FinishedViewController()
         window?.makeKeyAndVisible()
     }
 

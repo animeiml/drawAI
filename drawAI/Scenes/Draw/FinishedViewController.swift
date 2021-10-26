@@ -9,12 +9,16 @@ import UIKit
 
 class FinishedViewController: UIViewController {
 
+    @IBOutlet weak var mascotImageView: UIImageView!
+    @IBOutlet weak var mascotView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        mascotView.layer.cornerRadius = mascotView.frame.width * 0.0866
+        
+        mascotImageView.contentMode = .scaleAspectFit
+        mascotView.layer.cornerRadius = mascotView.frame.width * 0.0866
     }
-
 
     /*
     // MARK: - Navigation

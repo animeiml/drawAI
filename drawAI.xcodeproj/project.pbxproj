@@ -11,6 +11,10 @@
 		354DE29E27219718007FDC94 /* ANView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29D27219718007FDC94 /* ANView.swift */; };
 		35760F8327205746004FEC9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35760F8127205746004FEC9B /* HomeViewController.swift */; };
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
+		798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798AE173272835E9006CB063 /* FinishedViewController.swift */; };
+		798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798AE174272835E9006CB063 /* FinishedViewController.xib */; };
+		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
+		798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE178272836C7006CB063 /* Tuffy_Bold.ttf */; };
 		79B71D812721B5B400E209CD /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B71D802721B5B400E209CD /* CanvasView.swift */; };
 		79B71D832721B5D100E209CD /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D822721B5D100E209CD /* CanvasView.xib */; };
 		79B71D872722F8C400E209CD /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B71D852722F8C400E209CD /* EndViewController.swift */; };
@@ -30,6 +34,10 @@
 		354DE29D27219718007FDC94 /* ANView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANView.swift; sourceTree = "<group>"; };
 		35760F8127205746004FEC9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35760F8227205746004FEC9B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		798AE173272835E9006CB063 /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
+		798AE174272835E9006CB063 /* FinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishedViewController.xib; sourceTree = "<group>"; };
+		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
+		798AE178272836C7006CB063 /* Tuffy_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy_Bold.ttf; sourceTree = "<group>"; };
 		79B71D802721B5B400E209CD /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		79B71D822721B5D100E209CD /* CanvasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CanvasView.xib; sourceTree = "<group>"; };
 		79B71D852722F8C400E209CD /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,8 @@
 		79B71D8927230D7900E209CD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				798AE178272836C7006CB063 /* Tuffy_Bold.ttf */,
+				798AE177272836C7006CB063 /* Tuffy.ttf */,
 				79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */,
 			);
 			path = Fonts;
@@ -147,6 +157,8 @@
 			children = (
 				79BB1FE5272068EA0099015C /* DrawViewController.swift */,
 				79BB1FE6272068EA0099015C /* DrawViewController.xib */,
+				798AE173272835E9006CB063 /* FinishedViewController.swift */,
+				798AE174272835E9006CB063 /* FinishedViewController.xib */,
 				79BB1FDD2720628C0099015C /* Components */,
 			);
 			path = Draw;
@@ -229,9 +241,12 @@
 			files = (
 				79B71D882722F8C400E209CD /* EndViewController.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
+				798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				79BB1FE8272068EA0099015C /* DrawViewController.xib in Resources */,
+				798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
+				798AE179272836C7006CB063 /* Tuffy.ttf in Resources */,
 				79B71D832721B5D100E209CD /* CanvasView.xib in Resources */,
 				79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
@@ -248,6 +263,7 @@
 				79BB1FE7272068EA0099015C /* DrawViewController.swift in Sources */,
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
 				79B71D812721B5B400E209CD /* CanvasView.swift in Sources */,
+				798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */,
 				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
 				354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */,

@@ -19,5 +19,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ShadowsIntoLight-Regular.ttf</string>
+		<string>Tuffy.ttf</string>
+		<string>Tuffy_Bold.ttf</string>
+	</array>
 </dict>
 </plist>

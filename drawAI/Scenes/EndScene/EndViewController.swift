@@ -48,7 +48,11 @@ class EndViewController: UIViewController {
         userDrawImage.layer.cornerRadius = userDraw.frame.height * 0.08
     }
 
-
+    @IBAction func didTouchHome(_ sender: Any) {
+       let homeViewC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        self.navigationController?.pushViewController(homeViewC, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

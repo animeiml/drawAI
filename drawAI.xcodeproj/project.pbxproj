@@ -18,6 +18,7 @@
 		358D2D4F27230105008233EF /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D4D27230105008233EF /* CanvasView.xib */; };
 		358D2D5327230120008233EF /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D5127230120008233EF /* DrawViewController.xib */; };
 		35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7799B27206D0300606DA7 /* DrawToolsView.swift */; };
+		7930365627298C2300D1E1A8 /* Draw in Resources */ = {isa = PBXBuildFile; fileRef = 7930365527298C2300D1E1A8 /* Draw */; };
 		798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798AE173272835E9006CB063 /* FinishedViewController.swift */; };
 		798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798AE174272835E9006CB063 /* FinishedViewController.xib */; };
 		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
@@ -45,6 +46,7 @@
 		358D2D5027230120008233EF /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawViewController.swift; path = drawAI/Scenes/Draw/DrawViewController.swift; sourceTree = "<group>"; };
 		358D2D5127230120008233EF /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrawViewController.xib; path = drawAI/Scenes/Draw/DrawViewController.xib; sourceTree = "<group>"; };
 		35F7799B27206D0300606DA7 /* DrawToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawToolsView.swift; path = drawAI/Scenes/Draw/Components/DrawTools/DrawToolsView.swift; sourceTree = "<group>"; };
+		7930365527298C2300D1E1A8 /* Draw */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Draw; sourceTree = "<group>"; };
 		798AE173272835E9006CB063 /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinishedViewController.swift; path = drawAI/Scenes/Draw/FinishedViewController.swift; sourceTree = "<group>"; };
 		798AE174272835E9006CB063 /* FinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FinishedViewController.xib; path = drawAI/Scenes/Draw/FinishedViewController.xib; sourceTree = "<group>"; };
 		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		35760F7F27205720004FEC9B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7930365527298C2300D1E1A8 /* Draw */,
 				79B71D842722F85400E209CD /* EndScene */,
 				35760F8027205728004FEC9B /* HomeViewController */,
 			);
@@ -250,6 +253,7 @@
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
 				358D2D4F27230105008233EF /* CanvasView.xib in Resources */,
 				798AE179272836C7006CB063 /* Tuffy.ttf in Resources */,
+				7930365627298C2300D1E1A8 /* Draw in Resources */,
 				79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

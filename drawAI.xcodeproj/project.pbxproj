@@ -24,6 +24,8 @@
 		79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BB1FD3272043640099015C /* LaunchScreen.storyboard */; };
 		D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */; };
 		D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */; };
+		D69E54DB272852B200CA7B6B /* GameCenterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E54DA272852B100CA7B6B /* GameCenterSettings.swift */; };
+		D69E54DE2728558700CA7B6B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69E54DD2728558700CA7B6B /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawTimerBarView.xib; sourceTree = "<group>"; };
 		D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTimerBarView.swift; sourceTree = "<group>"; };
 		D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawTimerBarView.xib; sourceTree = "<group>"; };
+		D69E54DA272852B100CA7B6B /* GameCenterSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterSettings.swift; sourceTree = "<group>"; };
+		D69E54DD2728558700CA7B6B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69E54DE2728558700CA7B6B /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +151,7 @@
 				79BB1FC7272043620099015C /* drawAI */,
 				79BB1FC6272043620099015C /* Products */,
 				35D57D622721BA5100D50DD2 /* Recovered References */,
+				D69E54DC2728558700CA7B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +166,7 @@
 		79BB1FC7272043620099015C /* drawAI */ = {
 			isa = PBXGroup;
 			children = (
+				D69E54D92728529A00CA7B6B /* GameCenter */,
 				354DE29C2721970A007FDC94 /* Core */,
 				354DE299272196CF007FDC94 /* Extensions */,
 				35760F7F27205720004FEC9B /* Scenes */,
@@ -180,6 +187,22 @@
 				D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */,
 			);
 			path = DrawTimerBar;
+			sourceTree = "<group>";
+		};
+		D69E54D92728529A00CA7B6B /* GameCenter */ = {
+			isa = PBXGroup;
+			children = (
+				D69E54DA272852B100CA7B6B /* GameCenterSettings.swift */,
+			);
+			path = GameCenter;
+			sourceTree = "<group>";
+		};
+		D69E54DC2728558700CA7B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D69E54DD2728558700CA7B6B /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +284,7 @@
 				358D2D5227230120008233EF /* DrawViewController.swift in Sources */,
 				358D2D4E27230105008233EF /* CanvasView.swift in Sources */,
 				35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */,
+				D69E54DB272852B200CA7B6B /* GameCenterSettings.swift in Sources */,
 				D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */,
 				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
@@ -407,11 +431,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R5H255ZF9U;
+				DEVELOPMENT_TEAM = 229HP4B3PQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = drawAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = gamekit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,11 +459,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R5H255ZF9U;
+				DEVELOPMENT_TEAM = 229HP4B3PQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = drawAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = gamekit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -50,6 +50,9 @@
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                         <color key="baseForegroundColor" red="0.99992686509999995" green="1" blue="0.99987345930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="didTouchHome:" destination="-1" eventType="touchUpInside" id="LwL-WL-EAn"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-xr-AAI">
                     <rect key="frame" x="104" y="638.5" width="206" height="56.5"/>

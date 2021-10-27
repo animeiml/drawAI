@@ -12,12 +12,12 @@
 		35760F8327205746004FEC9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35760F8127205746004FEC9B /* HomeViewController.swift */; };
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
 		35760F8A27205F9B004FEC9B /* DrawToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8927205F9B004FEC9B /* DrawToolsView.xib */; };
+		358BFFF12729870300AFE0DD /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63E3A91272067F300B4E795 /* DrawViewController.xib */; };
+		358BFFF22729884400AFE0DD /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D2D5027230120008233EF /* DrawViewController.swift */; };
 		358D2D4E27230105008233EF /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D2D4C27230105008233EF /* CanvasView.swift */; };
 		358D2D4F27230105008233EF /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D4D27230105008233EF /* CanvasView.xib */; };
-		358D2D5227230120008233EF /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D2D5027230120008233EF /* DrawViewController.swift */; };
 		358D2D5327230120008233EF /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D5127230120008233EF /* DrawViewController.xib */; };
 		35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7799B27206D0300606DA7 /* DrawToolsView.swift */; };
-		792C364C27284C7100CA8B63 /* Draw in Resources */ = {isa = PBXBuildFile; fileRef = 792C364B27284C7100CA8B63 /* Draw */; };
 		798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798AE173272835E9006CB063 /* FinishedViewController.swift */; };
 		798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798AE174272835E9006CB063 /* FinishedViewController.xib */; };
 		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
@@ -45,7 +45,6 @@
 		358D2D5027230120008233EF /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawViewController.swift; path = drawAI/Scenes/Draw/DrawViewController.swift; sourceTree = "<group>"; };
 		358D2D5127230120008233EF /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrawViewController.xib; path = drawAI/Scenes/Draw/DrawViewController.xib; sourceTree = "<group>"; };
 		35F7799B27206D0300606DA7 /* DrawToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawToolsView.swift; path = drawAI/Scenes/Draw/Components/DrawTools/DrawToolsView.swift; sourceTree = "<group>"; };
-		792C364B27284C7100CA8B63 /* Draw */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Draw; sourceTree = "<group>"; };
 		798AE173272835E9006CB063 /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinishedViewController.swift; path = drawAI/Scenes/Draw/FinishedViewController.swift; sourceTree = "<group>"; };
 		798AE174272835E9006CB063 /* FinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FinishedViewController.xib; path = drawAI/Scenes/Draw/FinishedViewController.xib; sourceTree = "<group>"; };
 		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
@@ -60,7 +59,7 @@
 		79BB1FD1272043640099015C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79BB1FD4272043640099015C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79BB1FD6272043640099015C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrawTimerBarView.xib; path = drawAI/Scenes/Draw/Components/DrawTimerBar/DrawTimerBarView.xib; sourceTree = "<group>"; };
+		D63E3A91272067F300B4E795 /* DrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrawViewController.xib; path = drawAI/Scenes/Draw/DrawViewController.xib; sourceTree = "<group>"; };
 		D69E54D22726F57000CA7B6B /* DrawTimerBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawTimerBarView.swift; path = drawAI/Scenes/Draw/Components/DrawTimerBar/DrawTimerBarView.swift; sourceTree = "<group>"; };
 		D69E54D42726F57D00CA7B6B /* DrawTimerBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrawTimerBarView.xib; path = drawAI/Scenes/Draw/Components/DrawTimerBar/DrawTimerBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,7 +95,6 @@
 		35760F7F27205720004FEC9B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				792C364B27284C7100CA8B63 /* Draw */,
 				79B71D842722F85400E209CD /* EndScene */,
 				35760F8027205728004FEC9B /* HomeViewController */,
 			);
@@ -115,7 +113,7 @@
 		35D57D622721BA5100D50DD2 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				D63E3A91272067F300B4E795 /* DrawTimerBarView.xib */,
+				D63E3A91272067F300B4E795 /* DrawViewController.xib */,
 				358D2D5027230120008233EF /* DrawViewController.swift */,
 				358D2D4C27230105008233EF /* CanvasView.swift */,
 				35F7799B27206D0300606DA7 /* DrawToolsView.swift */,
@@ -246,7 +244,7 @@
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
 				D69E54D52726F57D00CA7B6B /* DrawTimerBarView.xib in Resources */,
 				798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */,
-				792C364C27284C7100CA8B63 /* Draw in Resources */,
+				358BFFF12729870300AFE0DD /* DrawViewController.xib in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
@@ -263,9 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358BFFF22729884400AFE0DD /* DrawViewController.swift in Sources */,
 				79B71D872722F8C400E209CD /* EndViewController.swift in Sources */,
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
-				358D2D5227230120008233EF /* DrawViewController.swift in Sources */,
 				358D2D4E27230105008233EF /* CanvasView.swift in Sources */,
 				35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */,
 				D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */,

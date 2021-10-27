@@ -9,12 +9,15 @@ import Foundation
 
 final class DrawViewModel {
     private let storageProvider: StorageProviderProtocol
+    private var imgUrl: URL?
     
-    init(storageProvider: StorageProviderProtocol = DefaultsStorageProvider()) {
+    init(storageProvider: StorageProviderProtocol = FileManagerStorageProvider()) {
         self.storageProvider = storageProvider
     }
     
-    func saveData(_ data: Data) {
-        storageProvider.saveImageData(data)
+    func saveImageWithData(_ data: Data) {
+        guard let imgUrl: URL = storageProvider.saveImageUrl(data) else { return }
+        
+        self.imgUrl = imgUrl
     }
 }

@@ -16,6 +16,7 @@
 		35760F8327205746004FEC9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35760F8127205746004FEC9B /* HomeViewController.swift */; };
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
 		35760F8A27205F9B004FEC9B /* DrawToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8927205F9B004FEC9B /* DrawToolsView.xib */; };
+		358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */; };
 		358D2D4E27230105008233EF /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D2D4C27230105008233EF /* CanvasView.swift */; };
 		358D2D4F27230105008233EF /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D4D27230105008233EF /* CanvasView.xib */; };
 		358D2D5227230120008233EF /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D2D5027230120008233EF /* DrawViewController.swift */; };
@@ -40,6 +41,7 @@
 		35760F8127205746004FEC9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35760F8227205746004FEC9B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		35760F8927205F9B004FEC9B /* DrawToolsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawToolsView.xib; sourceTree = "<group>"; };
+		358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerStorageProvider.swift; sourceTree = "<group>"; };
 		358D2D4C27230105008233EF /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		358D2D4D27230105008233EF /* CanvasView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasView.xib; sourceTree = "<group>"; };
 		358D2D5027230120008233EF /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				3511395A27284A1700956CB6 /* DefaultsStorageProvider.swift */,
+				358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
 				358D2D5227230120008233EF /* DrawViewController.swift in Sources */,
+				358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */,
 				351139542728489C00956CB6 /* AppSettings.swift in Sources */,
 				351139582728496100956CB6 /* StorageProviderProtocol.swift in Sources */,
 				358D2D4E27230105008233EF /* CanvasView.swift in Sources */,

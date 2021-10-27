@@ -52,6 +52,8 @@ extension DrawViewController: DrawTimerBarDelegate {
         guard let drawing: UIImage = canvasView.captureDrawImage(),
               let drawingData: Data = drawing.pngData() else { return }
         
-        viewModel.saveData(drawingData)
+        viewModel.saveImageWithData(drawingData)
+        
+        // TODO: push next view and rank drawing similarity
     }
 }

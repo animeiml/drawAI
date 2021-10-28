@@ -3,6 +3,7 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83d-sM-vR1" customClass="DrawTimerBarView" customModule="drawAI" customModuleProvider="target">
+                <view contentMode="scaleToFill" restorationIdentifier="DrawViewController" translatesAutoresizingMaskIntoConstraints="NO" id="83d-sM-vR1" customClass="DrawTimerBarView" customModule="drawAI" customModuleProvider="target">
                     <rect key="frame" x="20" y="64" width="388" height="20"/>
                     <color key="backgroundColor" red="0.85098039215686272" green="0.92156862745098034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -54,7 +55,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="background"/>
             <constraints>
                 <constraint firstItem="sPH-Xz-m8v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Kq-lo-4OZ"/>
                 <constraint firstItem="83d-sM-vR1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="0Xu-cB-1vB"/>
@@ -73,6 +74,9 @@
     </objects>
     <resources>
         <image name="folder.fill.badge.questionmark" catalog="system" width="128" height="91"/>
+        <namedColor name="background">
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -54,6 +54,10 @@ extension DrawViewController: DrawTimerBarDelegate {
         
         viewModel.saveImageWithData(drawingData)
         
-        // TODO: push next view and rank drawing similarity
+        guard let endViewModel: EndViewModel = viewModel.buildEndViewModel() else { return }
+        
+        let endViewController: EndViewController = EndViewController(viewModel: endViewModel)
+        
+        navigationController?.pushViewController(endViewController, animated: true)
     }
 }

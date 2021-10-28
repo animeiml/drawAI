@@ -17,10 +17,33 @@ class EndViewController: UIViewController {
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    
+    private let viewModel: EndViewModel
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        setupUIData()
+    }
 
-        // Do any additional setup after loading the view.
+    @IBAction func didTouchHome(_ sender: Any) {
+       let homeViewC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        self.navigationController?.pushViewController(homeViewC, animated: true)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+    
+    init(viewModel: EndViewModel) {
+        self.viewModel = viewModel
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+}
+
+extension EndViewController {
+    func setupUI() {
         userDraw.layer.cornerRadius = userDraw.frame.height * 0.08
         homeButton.layer.cornerRadius = homeButton.frame.height / 2
         saveButton.layer.cornerRadius = saveButton.frame.height / 2
@@ -47,20 +70,8 @@ class EndViewController: UIViewController {
         userDrawImage.contentMode = .scaleAspectFit
         userDrawImage.layer.cornerRadius = userDraw.frame.height * 0.08
     }
-
-    @IBAction func didTouchHome(_ sender: Any) {
-       let homeViewC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        self.navigationController?.pushViewController(homeViewC, animated: true)
-    }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupUIData() {
+        userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
     }
-    */
-
 }

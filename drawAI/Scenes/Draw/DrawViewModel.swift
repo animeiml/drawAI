@@ -20,4 +20,14 @@ final class DrawViewModel {
         
         self.imgUrl = imgUrl
     }
+    
+    func buildEndViewModel() -> EndViewModel? {
+        guard let imgUrl: URL = imgUrl else {
+            return nil
+        }
+        
+        let viewModel: EndViewModel = EndViewModel(drawingImgUrl: imgUrl)
+        
+        return viewModel
+    }
 }

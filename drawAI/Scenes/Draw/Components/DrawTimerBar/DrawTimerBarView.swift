@@ -21,7 +21,7 @@ class DrawTimerBarView: ANView {
     var progress: CGFloat = 1.0 {
         didSet { setNeedsDisplay() }
     }
-    private var progressLayer = CAShapeLayer()
+    
     var color: UIColor = Colors.redButtonColor
     
     override init(frame: CGRect) {

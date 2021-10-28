@@ -17,5 +17,10 @@ class HomeViewController: UIViewController {
         startButton.layer.cornerRadius = startButton.frame.height/2
         
         logoView.layer.cornerRadius = logoView.frame.height * 0.14
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    @IBAction func didTouchStart(_ sender: Any) {
+        let drawViewC: DrawViewController = DrawViewController()
+         self.navigationController?.pushViewController(drawViewC, animated: true)
     }
 }

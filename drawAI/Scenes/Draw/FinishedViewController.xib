@@ -75,10 +75,10 @@
     </objects>
     <resources>
         <namedColor name="background">
-            <color red="0.99579399820000003" green="0.96897250410000002" blue="0.94509500270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="backgroundBlueColor">
-            <color red="0.67633730169999995" green="0.89359629149999997" blue="0.92157572509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.67599999904632568" green="0.89399999380111694" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

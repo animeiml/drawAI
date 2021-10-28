@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83d-sM-vR1" customClass="DrawTimerBarView" customModule="drawAI" customModuleProvider="target">
+                <view contentMode="scaleToFill" restorationIdentifier="DrawViewController" translatesAutoresizingMaskIntoConstraints="NO" id="83d-sM-vR1" customClass="DrawTimerBarView" customModule="drawAI" customModuleProvider="target">
                     <rect key="frame" x="20" y="64" width="388" height="20"/>
                     <color key="backgroundColor" red="0.85098039215686272" green="0.92156862745098034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -75,7 +75,7 @@
     <resources>
         <image name="folder.fill.badge.questionmark" catalog="system" width="128" height="91"/>
         <namedColor name="background">
-            <color red="0.99579399820000003" green="0.96897250410000002" blue="0.94509500270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -60,6 +60,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Start">
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="didTouchStart:" destination="-1" eventType="touchUpInside" id="PRv-ON-Lpd"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -83,13 +86,13 @@
     </objects>
     <resources>
         <namedColor name="background">
-            <color red="0.99579399820000003" green="0.96897250410000002" blue="0.94509500270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="backgroundBlueColor">
-            <color red="0.67633730169999995" green="0.89359629149999997" blue="0.92157572509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.67599999904632568" green="0.89399999380111694" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttonColor">
-            <color red="0.58265227080000004" green="0.83470141890000005" blue="0.86667460200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.58300000429153442" green="0.83499997854232788" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

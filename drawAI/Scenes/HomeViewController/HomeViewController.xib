@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -25,14 +25,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pP-e1-PaU">
-                    <rect key="frame" x="57" y="84" width="300" height="100"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="300" id="dyM-1L-aAu"/>
-                        <constraint firstAttribute="height" constant="100" id="vgR-Ou-Rd3"/>
-                    </constraints>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRAW" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlb-2D-eN5">
                     <rect key="frame" x="20" y="333" width="374" height="49"/>
                     <constraints>
@@ -44,7 +36,7 @@
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLC-uB-WHV">
                     <rect key="frame" x="130" y="139" width="154" height="154"/>
-                    <color key="backgroundColor" red="0.67633730169999995" green="0.89359629149999997" blue="0.92157572509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" name="backgroundBlueColor"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="QLC-uB-WHV" secondAttribute="height" multiplier="1:1" id="3Od-tP-VaT"/>
                     </constraints>
@@ -60,7 +52,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF6-RI-50w">
                     <rect key="frame" x="107" y="590" width="200" height="46"/>
-                    <color key="backgroundColor" red="0.58431372549019611" green="0.83470141890000005" blue="0.86667460200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" name="buttonColor"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="FF6-RI-50w" secondAttribute="height" multiplier="100:23" id="Xpp-sz-IwG"/>
                     </constraints>
@@ -71,18 +63,16 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="background"/>
             <constraints>
                 <constraint firstItem="vlb-2D-eN5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0gL-PI-LUG"/>
                 <constraint firstItem="yr3-4D-AV1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5hd-E6-9Sq"/>
                 <constraint firstItem="vlb-2D-eN5" firstAttribute="top" secondItem="QLC-uB-WHV" secondAttribute="bottom" constant="40" id="6TE-c1-lqo"/>
-                <constraint firstItem="9pP-e1-PaU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="CaT-Ih-Ahc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FF6-RI-50w" secondAttribute="trailing" constant="107" id="EcT-m5-6lj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QLC-uB-WHV" secondAttribute="trailing" constant="130" id="GKf-PA-x7S"/>
                 <constraint firstItem="FF6-RI-50w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="107" id="KAe-kn-cQz"/>
                 <constraint firstItem="yr3-4D-AV1" firstAttribute="top" secondItem="vlb-2D-eN5" secondAttribute="bottom" id="PY4-kr-Dxt"/>
                 <constraint firstItem="QLC-uB-WHV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="130" id="ROl-5T-keV"/>
-                <constraint firstItem="9pP-e1-PaU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="abG-yy-Qho"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vlb-2D-eN5" secondAttribute="trailing" constant="20" id="e15-hk-rJg"/>
                 <constraint firstItem="QLC-uB-WHV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="95" id="lTI-6d-eVr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yr3-4D-AV1" secondAttribute="trailing" constant="20" id="r9d-7d-PRI"/>
@@ -92,8 +82,14 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="background">
+            <color red="0.99579399820000003" green="0.96897250410000002" blue="0.94509500270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="backgroundBlueColor">
+            <color red="0.67633730169999995" green="0.89359629149999997" blue="0.92157572509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="buttonColor">
+            <color red="0.58265227080000004" green="0.83470141890000005" blue="0.86667460200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

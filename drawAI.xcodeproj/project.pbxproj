@@ -19,6 +19,7 @@
 		358D2D5327230120008233EF /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D2D5127230120008233EF /* DrawViewController.xib */; };
 		35F7799C27206D0300606DA7 /* DrawToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7799B27206D0300606DA7 /* DrawToolsView.swift */; };
 		7930365627298C2300D1E1A8 /* Draw in Resources */ = {isa = PBXBuildFile; fileRef = 7930365527298C2300D1E1A8 /* Draw */; };
+		793922E8272ADB2E009A2A94 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793922E7272ADB2E009A2A94 /* Colors.swift */; };
 		798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798AE173272835E9006CB063 /* FinishedViewController.swift */; };
 		798AE176272835E9006CB063 /* FinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798AE174272835E9006CB063 /* FinishedViewController.xib */; };
 		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
@@ -47,6 +48,7 @@
 		358D2D5127230120008233EF /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrawViewController.xib; path = drawAI/Scenes/Draw/DrawViewController.xib; sourceTree = "<group>"; };
 		35F7799B27206D0300606DA7 /* DrawToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawToolsView.swift; path = drawAI/Scenes/Draw/Components/DrawTools/DrawToolsView.swift; sourceTree = "<group>"; };
 		7930365527298C2300D1E1A8 /* Draw */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Draw; sourceTree = "<group>"; };
+		793922E7272ADB2E009A2A94 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		798AE173272835E9006CB063 /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinishedViewController.swift; path = drawAI/Scenes/Draw/FinishedViewController.swift; sourceTree = "<group>"; };
 		798AE174272835E9006CB063 /* FinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FinishedViewController.xib; path = drawAI/Scenes/Draw/FinishedViewController.xib; sourceTree = "<group>"; };
 		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				79B71D8927230D7900E209CD /* Fonts */,
 				354DE29D27219718007FDC94 /* ANView.swift */,
+				793922E7272ADB2E009A2A94 /* Colors.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				D69E54D32726F57000CA7B6B /* DrawTimerBarView.swift in Sources */,
 				798AE175272835E9006CB063 /* FinishedViewController.swift in Sources */,
 				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
+				793922E8272ADB2E009A2A94 /* Colors.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
 				354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */,
 				79BB1FCB272043620099015C /* SceneDelegate.swift in Sources */,

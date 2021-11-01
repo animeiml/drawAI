@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ShadowsIntoLight-Regular.ttf">
+            <string>ShadowsIntoLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeIpadViewController" customModule="drawAI" customModuleProvider="target">
+            <connections>
+                <outlet property="logoView" destination="RQl-xG-yuP" id="6Rh-Co-HOX"/>
+                <outlet property="startButton" destination="mGP-nI-72e" id="Sf7-ay-Fbi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRAW" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-Gy-kbg">
+                    <rect key="frame" x="20" y="382" width="794" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pqK-Gy-kbg" secondAttribute="height" multiplier="492:29" id="gVi-H5-Dp0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ShadowsIntoLight" family="Shadows Into Light" pointSize="62"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQl-xG-yuP">
+                    <rect key="frame" x="359" y="220" width="117" height="117"/>
+                    <color key="backgroundColor" name="backgroundBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RQl-xG-yuP" secondAttribute="height" multiplier="1:1" id="vnQ-ax-jt4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A.I." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRD-1b-PhD">
+                    <rect key="frame" x="20" y="429" width="794" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xRD-1b-PhD" secondAttribute="height" multiplier="123:7" id="1ut-7E-0CA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ShadowsIntoLight" family="Shadows Into Light" pointSize="62"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-nI-72e">
+                    <rect key="frame" x="381" y="1092.5" width="72" height="16.5"/>
+                    <color key="backgroundColor" name="backgroundBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mGP-nI-72e" secondAttribute="height" multiplier="131:30" id="0wL-kc-c8t"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="START">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="22"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="xRD-1b-PhD" firstAttribute="top" secondItem="pqK-Gy-kbg" secondAttribute="bottom" id="3JA-VL-YLb"/>
+                <constraint firstItem="pqK-Gy-kbg" firstAttribute="top" secondItem="RQl-xG-yuP" secondAttribute="bottom" constant="45" id="5RE-Wf-KnK"/>
+                <constraint firstItem="mGP-nI-72e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="381" id="6bm-ke-rnG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xRD-1b-PhD" secondAttribute="trailing" constant="20" id="7Z3-Fk-pci"/>
+                <constraint firstItem="xRD-1b-PhD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Jb6-M8-XBR"/>
+                <constraint firstItem="pqK-Gy-kbg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NUP-ZJ-KyH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pqK-Gy-kbg" secondAttribute="trailing" constant="20" id="SRJ-JH-J9o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mGP-nI-72e" secondAttribute="trailing" constant="381" id="VgP-wK-YgO"/>
+                <constraint firstItem="RQl-xG-yuP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="359" id="jvR-Ln-K3S"/>
+                <constraint firstItem="RQl-xG-yuP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="196" id="kKs-GW-JW4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mGP-nI-72e" secondAttribute="bottom" constant="65" id="wJw-cv-cOU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RQl-xG-yuP" secondAttribute="trailing" constant="358" id="yu4-VX-Par"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8359375" y="79.941434846266461"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="backgroundBlueColor">
+            <color red="0.1764705882352941" green="0.3017781377" blue="0.89416605230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

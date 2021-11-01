@@ -9,8 +9,10 @@ import Foundation
 
 final class EndViewModel {
     private(set) var drawingImgUrl: URL
-    
-    init(drawingImgUrl: URL) {
+    private(set) var referenceImgUrl: URL
+
+    init(drawingImgUrl: URL, referenceImgUrl: URL) {
         self.drawingImgUrl = drawingImgUrl
+        self.referenceImgUrl = referenceImgUrl
     }
 }

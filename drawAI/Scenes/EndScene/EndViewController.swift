@@ -63,7 +63,6 @@ extension EndViewController {
         imageView.layer.borderColor = UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 0.20).cgColor
         imageView.layer.borderWidth = 1
         
-        referenceImage.image = UIImage(named: "kakashi")
         referenceImage.contentMode = .scaleAspectFit
         referenceImage.layer.cornerRadius = imageView.frame.height * 0.275
         
@@ -73,5 +72,6 @@ extension EndViewController {
     
     func setupUIData() {
         userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
+        referenceImage.image = UIImage(contentsOfFile: viewModel.referenceImgUrl.path)
     }
 }

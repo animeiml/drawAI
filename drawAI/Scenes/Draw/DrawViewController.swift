@@ -15,20 +15,10 @@ class DrawViewController: UIViewController {
     @IBOutlet weak var timerBarView: DrawTimerBarView!
     
     private var viewModel: DrawViewModel
-    private var referenceImageURL: URL? {
-        didSet {
-            var newImage: UIImage?
-            if let url = referenceImageURL {
-                newImage = UIImage(contentsOfFile: url.path)
-            }
-            referenceImageImageView.image = newImage
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        saveReferenceImage()
         toolsView.delegate = self
         timerBarView.delegate = self
     }
@@ -47,11 +37,6 @@ class DrawViewController: UIViewController {
 
         super.init(nibName: nil, bundle: nil)
     }
-    
-    func saveReferenceImage(){
-        guard let referenceImage: UIImage = UIImage(named: "kakashi") else { return }
-        referenceImageURL = saveImage(referenceImage)
-    }
 }
 
 extension DrawViewController: DrawToolsDelegate {
@@ -66,9 +51,12 @@ extension DrawViewController: DrawToolsDelegate {
 extension DrawViewController: DrawTimerBarDelegate {
     func didFinishTime() {
         guard let drawing: UIImage = canvasView.captureDrawImage(),
-              let drawingData: Data = drawing.pngData() else { return }
+              let drawingData: Data = drawing.pngData(),
+              let reference: UIImage = referenceImageImageView.image,
+              let referenceData: Data = reference.pngData() else { return }
         
-        viewModel.saveImageWithData(drawingData)
+        viewModel.saveDrawingImgURL(drawingData)
+        viewModel.saveReferenceImgURL(referenceData)
         
         guard let endViewModel: EndViewModel = viewModel.buildEndViewModel() else { return }
         
@@ -76,32 +64,4 @@ extension DrawViewController: DrawTimerBarDelegate {
         
         navigationController?.pushViewController(endViewController, animated: true)
     }
-}
-
-extension DrawViewController {
-    private func saveImage(_ image: UIImage) -> URL? {
-        guard let imageData = image.pngData() else {
-            return nil
-        }
-        let baseURL = FileManager.default.temporaryDirectory
-        let imageURL = baseURL.appendingPathComponent(UUID().uuidString).appendingPathExtension("png")
-        do {
-            try imageData.write(to: imageURL)
-            return imageURL
-        } catch {
-            print("Error saving image to \(imageURL.path): \(error)")
-            return nil
-        }
-    }
-    
-//    private func removeSavedImages() {
-//        var urls = contestantImageURLs
-//        if let originalURL = originalImageURL {
-//            urls.append(originalURL)
-//        }
-//        let fileMgr = FileManager.default
-//        for url in urls {
-//            try? fileMgr.removeItem(at: url)
-//        }
-//    }
 }

@@ -16,7 +16,15 @@ protocol DrawToolsDelegate: AnyObject {
 class DrawToolsView: ANView {
     weak var delegate: DrawToolsDelegate?
     
+    @IBOutlet private weak var pencilButton: UIButton!
+    @IBOutlet private weak var eraserButton: UIButton!
+    
     override func awakeFromNib() {
+        debugPrint("==== \(pencilButton.frame) ====")
+
+        pencilButton.setRounded()
+        eraserButton.setRounded()
+
         super.awakeFromNib()
     }
     

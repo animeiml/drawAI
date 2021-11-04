@@ -21,6 +21,7 @@ class CanvasView: ANView {
     
     override func awakeFromNib() {
         canvasView = PKCanvasView(frame: self.bounds)
+        canvasView?.backgroundColor = AppColors.backgroundColor
     }
 }
 

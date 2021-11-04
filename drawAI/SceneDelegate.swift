@@ -20,20 +20,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // let drawViewController: iPadDrawViewController = iPadDrawViewController()
         let drawViewController: DrawViewControllerProtocl
+        
+        let navController: UINavigationController
                     
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
+            
             drawViewController = DrawViewController()
+            
+            navController = UINavigationController(rootViewController: drawViewController as! UIViewController)
+            
         case .pad, .mac, .tv, .carPlay, .unspecified:
             let homeViewController : HomeIpadViewController = HomeIpadViewController()
+            
+            navController = UINavigationController(rootViewController: homeViewController)
+            
         @unknown default:
             drawViewController = iPadDrawViewController()
+            
+            navController = UINavigationController(rootViewController: drawViewController as! UIViewController)
         }
         
-        let navController: UINavigationController = UINavigationController(rootViewController: drawViewController as! UIViewController)
-        
-
-        let navController: UINavigationController = UINavigationController(rootViewController: homeViewController)
                 
         window = UIWindow(windowScene: windowScene)
 

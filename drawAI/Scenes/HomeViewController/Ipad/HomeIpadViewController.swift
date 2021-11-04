@@ -135,6 +135,10 @@ class HomeIpadViewController: UIViewController {
         
     }
 
+    @IBAction func didTouchStart(_ sender: Any) {
+        let drawViewC: iPadDrawViewController = iPadDrawViewController()
+         self.navigationController?.pushViewController(drawViewC, animated: true)
+    }
     /*
     // MARK: - Navigation
 

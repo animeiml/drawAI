@@ -45,4 +45,10 @@ final class EndViewModel {
                 }
             }
     }
+    
+    func removeSavedImages() {
+        let fileMgr = FileManager.default
+            try? fileMgr.removeItem(at: drawingImgUrl)
+            try? fileMgr.removeItem(at: referenceImgUrl)
+    }
 }

@@ -29,6 +29,10 @@ class EndViewController: UIViewController {
             self.viewModel.processImages()
         }
     }
+  
+    override func viewDidDisappear(_ animated: Bool) {
+        viewModel.removeSavedImages()
+    }
 
     @IBAction func didTouchHome(_ sender: Any) {
        let homeViewC = HomeViewController(nibName: "HomeViewController", bundle: nil)

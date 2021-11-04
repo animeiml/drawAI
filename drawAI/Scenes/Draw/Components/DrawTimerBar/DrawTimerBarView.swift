@@ -22,7 +22,9 @@ class DrawTimerBarView: ANView {
         didSet { setNeedsDisplay() }
     }
     
-    var color: UIColor = .blue
+    override func awakeFromNib() {
+        backgroundColor = AppColors.primaryColor
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,7 +43,7 @@ class DrawTimerBarView: ANView {
         
         let progressRect = CGRect(origin: .zero, size: CGSize(width: rect.width * progress, height: rect.height))
         progressLayer.frame = progressRect
-        progressLayer.backgroundColor = color.cgColor
+        progressLayer.backgroundColor = AppColors.accentColor.cgColor
         layer.addSublayer(progressLayer)
     }
     

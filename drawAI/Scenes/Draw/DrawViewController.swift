@@ -50,9 +50,10 @@ extension DrawViewController: DrawToolsDelegate {
 }
 extension DrawViewController: DrawTimerBarDelegate {
     func didFinishTime() {
-        guard let drawing: UIImage = canvasView.captureDrawImage(),
+//        guard let drawing: UIImage = canvasView.captureDrawImage(),
+        guard let drawing: UIImage = UIImage(named: "kakashi2"),
               let drawingData: Data = drawing.pngData(),
-              let reference: UIImage = referenceImageImageView.image,
+              let reference: UIImage = UIImage(named: "kakashi"),
               let referenceData: Data = reference.pngData() else { return }
         
         viewModel.saveDrawingImgURL(drawingData)

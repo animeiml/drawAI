@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Vision
 
 class EndViewController: UIViewController {
 
@@ -24,6 +25,9 @@ class EndViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupUIData()
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.viewModel.processImages()
+        }
     }
 
     @IBAction func didTouchHome(_ sender: Any) {
@@ -37,7 +41,6 @@ class EndViewController: UIViewController {
     
     init(viewModel: EndViewModel) {
         self.viewModel = viewModel
-        
         super.init(nibName: nil, bundle: nil)
     }
 }

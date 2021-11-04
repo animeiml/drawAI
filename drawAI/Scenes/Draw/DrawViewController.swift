@@ -20,6 +20,8 @@ class DrawViewController: UIViewController {
         
         toolsView.delegate = self
         timerBarView.delegate = self
+        
+        setupUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -33,8 +35,14 @@ class DrawViewController: UIViewController {
     
     init(viewModel: DrawViewModel = DrawViewModel()) {
         self.viewModel = viewModel
-
+        
         super.init(nibName: nil, bundle: nil)
+    }
+}
+
+extension DrawViewController {
+    func setupUI() {
+        view.backgroundColor = AppColors.backgroundColor
     }
 }
 

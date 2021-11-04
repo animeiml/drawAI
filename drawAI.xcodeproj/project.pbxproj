@@ -30,6 +30,8 @@
 		35DC655A2729AA2900A3FF22 /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DC65502729AA2900A3FF22 /* DrawViewController.xib */; };
 		35DC655C2729AB6A00A3FF22 /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC655B2729AB6A00A3FF22 /* DrawViewModel.swift */; };
 		793922E8272ADB2E009A2A94 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793922E7272ADB2E009A2A94 /* Colors.swift */; };
+		796BC31627341B3E00BF12D9 /* IpadFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796BC31427341B3E00BF12D9 /* IpadFinishedViewController.swift */; };
+		796BC31727341B3E00BF12D9 /* IpadFinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796BC31527341B3E00BF12D9 /* IpadFinishedViewController.xib */; };
 		79822641272BAF9F00DC7A57 /* HomeIpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982263F272BAF9F00DC7A57 /* HomeIpadViewController.swift */; };
 		79822642272BAF9F00DC7A57 /* HomeIpadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79822640272BAF9F00DC7A57 /* HomeIpadViewController.xib */; };
 		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
@@ -68,6 +70,8 @@
 		35DC65502729AA2900A3FF22 /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawViewController.xib; sourceTree = "<group>"; };
 		35DC655B2729AB6A00A3FF22 /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
 		793922E7272ADB2E009A2A94 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		796BC31427341B3E00BF12D9 /* IpadFinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadFinishedViewController.swift; sourceTree = "<group>"; };
+		796BC31527341B3E00BF12D9 /* IpadFinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadFinishedViewController.xib; sourceTree = "<group>"; };
 		7982263F272BAF9F00DC7A57 /* HomeIpadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIpadViewController.swift; sourceTree = "<group>"; };
 		79822640272BAF9F00DC7A57 /* HomeIpadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeIpadViewController.xib; sourceTree = "<group>"; };
 		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			children = (
 				35174881272AFFB10043E5CB /* iPadDrawViewController.swift */,
 				35174882272AFFB10043E5CB /* iPadDrawViewController.xib */,
+				796BC31427341B3E00BF12D9 /* IpadFinishedViewController.swift */,
+				796BC31527341B3E00BF12D9 /* IpadFinishedViewController.xib */,
 			);
 			path = iPad;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 				35174884272AFFB10043E5CB /* iPadDrawViewController.xib in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				35DC65562729AA2900A3FF22 /* CanvasView.xib in Resources */,
+				796BC31727341B3E00BF12D9 /* IpadFinishedViewController.xib in Resources */,
 				35DC65542729AA2900A3FF22 /* DrawTimerBarView.xib in Resources */,
 				35DC65512729AA2900A3FF22 /* FinishedViewController.xib in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
@@ -392,6 +399,7 @@
 				35DC65592729AA2900A3FF22 /* DrawViewController.swift in Sources */,
 				35DC65522729AA2900A3FF22 /* FinishedViewController.swift in Sources */,
 				79B71D872722F8C400E209CD /* EndViewController.swift in Sources */,
+				796BC31627341B3E00BF12D9 /* IpadFinishedViewController.swift in Sources */,
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
 				358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */,
 				351139542728489C00956CB6 /* AppSettings.swift in Sources */,

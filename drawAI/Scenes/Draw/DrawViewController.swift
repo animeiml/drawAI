@@ -9,12 +9,13 @@ import UIKit
 import Foundation
 
 class DrawViewController: UIViewController {
+    @IBOutlet weak var referenceImageImageView: UIImageView!
     @IBOutlet weak var canvasView: CanvasView!
     @IBOutlet weak var toolsView: DrawToolsView!
     @IBOutlet weak var timerBarView: DrawTimerBarView!
     
     private var viewModel: DrawViewModel
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,9 +51,12 @@ extension DrawViewController: DrawToolsDelegate {
 extension DrawViewController: DrawTimerBarDelegate {
     func didFinishTime() {
         guard let drawing: UIImage = canvasView.captureDrawImage(),
-              let drawingData: Data = drawing.pngData() else { return }
+              let drawingData: Data = drawing.pngData(),
+              let reference: UIImage = UIImage(named: "espadinha"),
+              let referenceData: Data = reference.pngData() else { return }
         
-        viewModel.saveImageWithData(drawingData)
+        viewModel.saveDrawingImgURL(drawingData)
+        viewModel.saveReferenceImgURL(referenceData)
         
         guard let endViewModel: EndViewModel = viewModel.buildEndViewModel() else { return }
         

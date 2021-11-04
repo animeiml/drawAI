@@ -14,6 +14,16 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+}
+
+extension HomeViewController {
+    func setupUI() {
+        view.backgroundColor = AppColors.backgroundColor
+        
+        startButton.backgroundColor = AppColors.primaryColor
+        startButton.titleLabel?.textColor = AppColors.backgroundColor
         startButton.layer.cornerRadius = startButton.frame.height/2
         
         logoView.layer.cornerRadius = logoView.frame.height * 0.14

@@ -32,6 +32,8 @@
 		793922E8272ADB2E009A2A94 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793922E7272ADB2E009A2A94 /* Colors.swift */; };
 		796BC31627341B3E00BF12D9 /* IpadFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796BC31427341B3E00BF12D9 /* IpadFinishedViewController.swift */; };
 		796BC31727341B3E00BF12D9 /* IpadFinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796BC31527341B3E00BF12D9 /* IpadFinishedViewController.xib */; };
+		796BC31D27342BFB00BF12D9 /* IpadEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796BC31B27342BFB00BF12D9 /* IpadEndViewController.swift */; };
+		796BC31E27342BFB00BF12D9 /* IpadEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796BC31C27342BFB00BF12D9 /* IpadEndViewController.xib */; };
 		79822641272BAF9F00DC7A57 /* HomeIpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982263F272BAF9F00DC7A57 /* HomeIpadViewController.swift */; };
 		79822642272BAF9F00DC7A57 /* HomeIpadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79822640272BAF9F00DC7A57 /* HomeIpadViewController.xib */; };
 		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
@@ -72,6 +74,8 @@
 		793922E7272ADB2E009A2A94 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		796BC31427341B3E00BF12D9 /* IpadFinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadFinishedViewController.swift; sourceTree = "<group>"; };
 		796BC31527341B3E00BF12D9 /* IpadFinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadFinishedViewController.xib; sourceTree = "<group>"; };
+		796BC31B27342BFB00BF12D9 /* IpadEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadEndViewController.swift; sourceTree = "<group>"; };
+		796BC31C27342BFB00BF12D9 /* IpadEndViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadEndViewController.xib; sourceTree = "<group>"; };
 		7982263F272BAF9F00DC7A57 /* HomeIpadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIpadViewController.swift; sourceTree = "<group>"; };
 		79822640272BAF9F00DC7A57 /* HomeIpadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeIpadViewController.xib; sourceTree = "<group>"; };
 		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
@@ -241,6 +245,32 @@
 			path = DrawTools;
 			sourceTree = "<group>";
 		};
+		796BC31827342B9D00BF12D9 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				79B71D852722F8C400E209CD /* EndViewController.swift */,
+				79B71D862722F8C400E209CD /* EndViewController.xib */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		796BC31927342BB400BF12D9 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				796BC31B27342BFB00BF12D9 /* IpadEndViewController.swift */,
+				796BC31C27342BFB00BF12D9 /* IpadEndViewController.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		796BC31A27342BC600BF12D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				355EFA20272AD14A005E3735 /* EndViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		7982263D272BAF5A00DC7A57 /* Iphone */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,9 +292,9 @@
 		79B71D842722F85400E209CD /* EndScene */ = {
 			isa = PBXGroup;
 			children = (
-				79B71D852722F8C400E209CD /* EndViewController.swift */,
-				79B71D862722F8C400E209CD /* EndViewController.xib */,
-				355EFA20272AD14A005E3735 /* EndViewModel.swift */,
+				796BC31A27342BC600BF12D9 /* ViewModels */,
+				796BC31927342BB400BF12D9 /* iPad */,
+				796BC31827342B9D00BF12D9 /* iPhone */,
 			);
 			path = EndScene;
 			sourceTree = "<group>";
@@ -384,6 +414,7 @@
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
 				79822642272BAF9F00DC7A57 /* HomeIpadViewController.xib in Resources */,
 				798AE179272836C7006CB063 /* Tuffy.ttf in Resources */,
+				796BC31E27342BFB00BF12D9 /* IpadEndViewController.xib in Resources */,
 				79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +431,7 @@
 				35DC65522729AA2900A3FF22 /* FinishedViewController.swift in Sources */,
 				79B71D872722F8C400E209CD /* EndViewController.swift in Sources */,
 				796BC31627341B3E00BF12D9 /* IpadFinishedViewController.swift in Sources */,
+				796BC31D27342BFB00BF12D9 /* IpadEndViewController.swift in Sources */,
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
 				358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */,
 				351139542728489C00956CB6 /* AppSettings.swift in Sources */,

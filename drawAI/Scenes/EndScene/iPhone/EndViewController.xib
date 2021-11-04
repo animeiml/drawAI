@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -166,16 +166,16 @@
             <color red="0.99579399820000003" green="0.96897250410000002" blue="0.94509500270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="backgroundBlueColor">
-            <color red="0.67633730169999995" green="0.89359629149999997" blue="0.92157572509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.17599999904632568" green="0.30199998617172241" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="blueText">
-            <color red="0.31273856760000002" green="0.61144024129999996" blue="0.83924359079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.31299999356269836" green="0.61100000143051147" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttonColor">
-            <color red="0.58265227080000004" green="0.83470141890000005" blue="0.86667460200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.58300000429153442" green="0.83499997854232788" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttonRedColor">
-            <color red="0.90023368599999998" green="0.51028043030000003" blue="0.49802786110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.89999997615814209" green="0.50999999046325684" blue="0.49799999594688416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

@@ -14,17 +14,23 @@ extension UIView {
         topAnchor.constraint(equalTo: other.topAnchor).isActive = true
         bottomAnchor.constraint(equalTo: other.bottomAnchor).isActive = true
     }
-}
-
-@IBDesignable extension UIView {
-    @IBInspectable var isRounded : Bool {
-        set {
-            let radius: CGFloat = newValue ? self.frame.height/2 : self.layer.cornerRadius
-            self.layer.cornerRadius = radius
-            self.layer.masksToBounds = true
-        }
-        get {
-            return self.isRounded
-        }
+    
+    func setRounded() {
+        layer.cornerRadius = frame.width/2
+        layer.masksToBounds = true
+        //clipsToBounds = true
     }
 }
+
+//@IBDesignable extension UIView {
+//    @IBInspectable var isRounded : Bool {
+//        set {
+//            let radius: CGFloat = newValue ? self.frame.height/2 : self.layer.cornerRadius
+//            self.layer.cornerRadius = radius
+//            self.layer.masksToBounds = true
+//        }
+//        get {
+//            return self.isRounded
+//        }
+//    }
+//}

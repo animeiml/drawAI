@@ -18,7 +18,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let homeViewController : HomeIpadViewController = HomeIpadViewController()
+        // let drawViewController: iPadDrawViewController = iPadDrawViewController()
+        let drawViewController: DrawViewControllerProtocl
+                    
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            drawViewController = DrawViewController()
+        case .pad, .mac, .tv, .carPlay, .unspecified:
+            let homeViewController : HomeIpadViewController = HomeIpadViewController()
+        @unknown default:
+            drawViewController = iPadDrawViewController()
+        }
+        
+        let navController: UINavigationController = UINavigationController(rootViewController: drawViewController as! UIViewController)
+        
 
         let navController: UINavigationController = UINavigationController(rootViewController: homeViewController)
                 

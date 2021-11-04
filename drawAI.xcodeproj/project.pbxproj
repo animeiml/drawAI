@@ -10,6 +10,8 @@
 		351139542728489C00956CB6 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351139532728489C00956CB6 /* AppSettings.swift */; };
 		351139582728496100956CB6 /* StorageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351139572728496100956CB6 /* StorageProviderProtocol.swift */; };
 		3511395B27284A1700956CB6 /* DefaultsStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511395A27284A1700956CB6 /* DefaultsStorageProvider.swift */; };
+		35174883272AFFB10043E5CB /* iPadDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35174881272AFFB10043E5CB /* iPadDrawViewController.swift */; };
+		35174884272AFFB10043E5CB /* iPadDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35174882272AFFB10043E5CB /* iPadDrawViewController.xib */; };
 		354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29A272196EC007FDC94 /* UIView+Extensions.swift */; };
 		354DE29E27219718007FDC94 /* ANView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29D27219718007FDC94 /* ANView.swift */; };
 		355EFA21272AD14A005E3735 /* EndViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355EFA20272AD14A005E3735 /* EndViewModel.swift */; };
@@ -46,6 +48,8 @@
 		351139532728489C00956CB6 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		351139572728496100956CB6 /* StorageProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProviderProtocol.swift; sourceTree = "<group>"; };
 		3511395A27284A1700956CB6 /* DefaultsStorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageProvider.swift; sourceTree = "<group>"; };
+		35174881272AFFB10043E5CB /* iPadDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadDrawViewController.swift; sourceTree = "<group>"; };
+		35174882272AFFB10043E5CB /* iPadDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iPadDrawViewController.xib; sourceTree = "<group>"; };
 		354DE29A272196EC007FDC94 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		354DE29D27219718007FDC94 /* ANView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANView.swift; sourceTree = "<group>"; };
 		355EFA20272AD14A005E3735 /* EndViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewModel.swift; sourceTree = "<group>"; };
@@ -117,6 +121,34 @@
 			path = Implementations;
 			sourceTree = "<group>";
 		};
+		3517487E272AFEBB0043E5CB /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				35DC654F2729AA2900A3FF22 /* DrawViewController.swift */,
+				35DC65502729AA2900A3FF22 /* DrawViewController.xib */,
+				35DC65432729AA2900A3FF22 /* FinishedViewController.xib */,
+				35DC65442729AA2900A3FF22 /* FinishedViewController.swift */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		3517487F272AFEC30043E5CB /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				35174881272AFFB10043E5CB /* iPadDrawViewController.swift */,
+				35174882272AFFB10043E5CB /* iPadDrawViewController.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		35174880272AFF470043E5CB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				35DC655B2729AB6A00A3FF22 /* DrawViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		354DE299272196CF007FDC94 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,12 +190,10 @@
 		35DC65422729AA2900A3FF22 /* Draw */ = {
 			isa = PBXGroup;
 			children = (
-				35DC65432729AA2900A3FF22 /* FinishedViewController.xib */,
-				35DC65442729AA2900A3FF22 /* FinishedViewController.swift */,
+				35174880272AFF470043E5CB /* ViewModels */,
+				3517487F272AFEC30043E5CB /* iPad */,
+				3517487E272AFEBB0043E5CB /* iPhone */,
 				35DC65452729AA2900A3FF22 /* Components */,
-				35DC654F2729AA2900A3FF22 /* DrawViewController.swift */,
-				35DC65502729AA2900A3FF22 /* DrawViewController.xib */,
-				35DC655B2729AB6A00A3FF22 /* DrawViewModel.swift */,
 			);
 			path = Draw;
 			sourceTree = "<group>";
@@ -339,6 +369,7 @@
 				79B71D882722F8C400E209CD /* EndViewController.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
 				798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */,
+				35174884272AFFB10043E5CB /* iPadDrawViewController.xib in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				35DC65562729AA2900A3FF22 /* CanvasView.xib in Resources */,
 				35DC65542729AA2900A3FF22 /* DrawTimerBarView.xib in Resources */,
@@ -364,6 +395,7 @@
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
 				358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */,
 				351139542728489C00956CB6 /* AppSettings.swift in Sources */,
+				35174883272AFFB10043E5CB /* iPadDrawViewController.swift in Sources */,
 				351139582728496100956CB6 /* StorageProviderProtocol.swift in Sources */,
 				355EFA21272AD14A005E3735 /* EndViewModel.swift in Sources */,
 				79822641272BAF9F00DC7A57 /* HomeIpadViewController.swift in Sources */,

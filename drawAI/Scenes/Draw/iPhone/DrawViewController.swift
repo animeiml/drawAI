@@ -8,7 +8,9 @@
 import UIKit
 import Foundation
 
-class DrawViewController: UIViewController {
+protocol DrawViewControllerProtocl { }
+
+class DrawViewController: UIViewController, DrawViewControllerProtocl {
     @IBOutlet weak var canvasView: CanvasView!
     @IBOutlet weak var toolsView: DrawToolsView!
     @IBOutlet weak var timerBarView: DrawTimerBarView!
@@ -24,7 +26,7 @@ class DrawViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         canvasView.setupDrawing()
-        timerBarView.startTimer()
+        // timerBarView.startTimer()
     }
     
     required init?(coder: NSCoder) {

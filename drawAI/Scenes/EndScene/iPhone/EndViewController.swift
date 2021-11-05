@@ -9,6 +9,7 @@ import UIKit
 
 class EndViewController: UIViewController {
 
+    
     @IBOutlet weak var userDrawImage: UIImageView!
     @IBOutlet weak var referenceImage: UIImageView!
     @IBOutlet weak var imageView: UIView!
@@ -55,17 +56,21 @@ extension EndViewController {
         
         nextButton.configuration?.imagePadding = nextButton.frame.width * 0.4391
         
-        scoreView.layer.borderColor = UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 0.20).cgColor
+        scoreView.backgroundColor = Colors.redButtonColor.withAlphaComponent(0.15)
+        scoreView.layer.borderColor = Colors.redButtonColor.withAlphaComponent(0.20).cgColor
         scoreView.layer.borderWidth = 1
         scoreView.layer.cornerRadius = scoreView.frame.width / 2
         
         imageView.layer.cornerRadius = imageView.frame.height * 0.275
-        imageView.layer.borderColor = UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 0.20).cgColor
+        imageView.layer.borderColor = Colors.redButtonColor.cgColor
         imageView.layer.borderWidth = 1
         
         referenceImage.image = UIImage(named: "kakashi")
         referenceImage.contentMode = .scaleAspectFit
         referenceImage.layer.cornerRadius = imageView.frame.height * 0.275
+        
+        userDraw.layer.borderColor = Colors.redButtonColor.cgColor
+        userDraw.layer.borderWidth = 1
         
         userDrawImage.contentMode = .scaleAspectFit
         userDrawImage.layer.cornerRadius = userDraw.frame.height * 0.08

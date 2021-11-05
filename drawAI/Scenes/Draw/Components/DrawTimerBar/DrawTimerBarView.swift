@@ -22,7 +22,7 @@ class DrawTimerBarView: ANView {
         didSet { setNeedsDisplay() }
     }
     
-    var color: UIColor = .blue
+    var color: UIColor = Colors.redButtonColor
     
     override init(frame: CGRect) {
         super.init(frame: frame)

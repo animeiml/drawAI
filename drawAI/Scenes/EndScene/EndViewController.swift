@@ -15,8 +15,11 @@ class EndViewController: UIViewController {
     @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var userDraw: UIView!
     @IBOutlet weak var homeButton: UIButton!
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var tryAgainButton: UIButton!
+    @IBOutlet weak var nextRoundView: UIView!
+    @IBOutlet weak var nextRoundLabel: UILabel!
+    @IBOutlet weak var scorePercentLabel: UILabel!
+    @IBOutlet weak var nextRoundImageView: UIImageView!
     
     private let viewModel: EndViewModel
     
@@ -29,6 +32,10 @@ class EndViewController: UIViewController {
     @IBAction func didTouchHome(_ sender: Any) {
        let homeViewC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         self.navigationController?.pushViewController(homeViewC, animated: true)
+    }
+    
+    @IBAction func didTouchNextRound(_ sender: UIButton) {
+        // TODO: Go to next round
     }
     
     required init?(coder: NSCoder) {
@@ -44,24 +51,39 @@ class EndViewController: UIViewController {
 
 extension EndViewController {
     func setupUI() {
+        navigationController?.navigationBar.isHidden = true
+        
+        view.backgroundColor = AppColors.backgroundColor
+        
+        userDraw.backgroundColor = AppColors.backgroundColor
         userDraw.layer.cornerRadius = userDraw.frame.height * 0.08
+        userDraw.layer.borderColor = AppColors.primaryColor.cgColor
+        userDraw.layer.borderWidth = 1
+
+        homeButton.backgroundColor = AppColors.primaryColor
+        homeButton.titleLabel?.textColor = AppColors.backgroundColor
         homeButton.layer.cornerRadius = homeButton.frame.height / 2
-        saveButton.layer.cornerRadius = saveButton.frame.height / 2
-        nextButton.layer.cornerRadius = nextButton.frame.height / 2
         
-        var config = UIButton.Configuration.filled()
-        config.imagePlacement = .trailing
-        config.imagePadding = 5
+        tryAgainButton.backgroundColor = AppColors.primaryColor
+        tryAgainButton.setTitleColor(AppColors.backgroundColor, for: .normal)
+        tryAgainButton.layer.cornerRadius = tryAgainButton.frame.height / 2
         
-        nextButton.configuration?.imagePadding = nextButton.frame.width * 0.4391
+        nextRoundView.backgroundColor = AppColors.accentColor
+        nextRoundView.layer.cornerRadius = nextRoundView.frame.height/2
+        nextRoundView.layer.masksToBounds = true
+        nextRoundLabel.textColor = AppColors.iconColor
         
-        scoreView.layer.borderColor = UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 0.20).cgColor
+        scoreView.layer.borderColor = AppColors.primaryColor.cgColor
         scoreView.layer.borderWidth = 1
         scoreView.layer.cornerRadius = scoreView.frame.width / 2
+        scoreView.backgroundColor = AppColors.primaryColor.withAlphaComponent(0.2)
+        
+        scorePercentLabel.textColor = AppColors.primaryColor
         
         imageView.layer.cornerRadius = imageView.frame.height * 0.275
-        imageView.layer.borderColor = UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 0.20).cgColor
+        imageView.layer.borderColor = AppColors.primaryColor.cgColor
         imageView.layer.borderWidth = 1
+        imageView.backgroundColor = AppColors.backgroundColor
         
         referenceImage.image = UIImage(named: "kakashi")
         referenceImage.contentMode = .scaleAspectFit

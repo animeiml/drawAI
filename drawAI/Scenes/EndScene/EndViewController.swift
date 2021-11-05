@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Vision
 
 class EndViewController: UIViewController {
 
@@ -27,6 +28,13 @@ class EndViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupUIData()
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.viewModel.processImages()
+        }
+    }
+  
+    override func viewDidDisappear(_ animated: Bool) {
+        viewModel.removeSavedImages()
     }
 
     @IBAction func didTouchHome(_ sender: Any) {
@@ -44,7 +52,6 @@ class EndViewController: UIViewController {
     
     init(viewModel: EndViewModel) {
         self.viewModel = viewModel
-        
         super.init(nibName: nil, bundle: nil)
     }
 }
@@ -85,7 +92,6 @@ extension EndViewController {
         imageView.layer.borderWidth = 1
         imageView.backgroundColor = AppColors.backgroundColor
         
-        referenceImage.image = UIImage(named: "kakashi")
         referenceImage.contentMode = .scaleAspectFit
         referenceImage.layer.cornerRadius = imageView.frame.height * 0.275
         
@@ -95,5 +101,6 @@ extension EndViewController {
     
     func setupUIData() {
         userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
+        referenceImage.image = UIImage(contentsOfFile: viewModel.referenceImgUrl.path)
     }
 }

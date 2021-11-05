@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <accessibilityOverrides dynamicTypePreference="3"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -103,11 +103,11 @@
                     <exclude reference="FiF-Fg-JcK"/>
                     <exclude reference="vVG-vl-JDS"/>
                     <exclude reference="96J-yh-04K"/>
-                    <exclude reference="Vue-Ej-ZPW"/>
                     <exclude reference="5Fs-PY-tud"/>
                     <exclude reference="bJv-fO-EI6"/>
                     <exclude reference="Kbk-bT-eDC"/>
                     <exclude reference="NX5-2I-3v0"/>
+                    <exclude reference="Vue-Ej-ZPW"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="138.8671875" y="119.9121522693997"/>

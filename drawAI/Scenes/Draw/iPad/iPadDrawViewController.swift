@@ -87,9 +87,9 @@ extension iPadDrawViewController: DrawTimerBarDelegate {
         
         // TODO: Navigate to the iPadEndViewController
         
-//        let endViewController: EndViewController = EndViewController(viewModel: endViewModel)
-//
-//        navigationController?.pushViewController(endViewController, animated: true)
+      //  let endViewController: IpadEndViewController = IpadEndViewController(viewModel: endViewModel)
+
+     //  navigationController?.pushViewController(endViewController, animated: true)
     }
 }
 

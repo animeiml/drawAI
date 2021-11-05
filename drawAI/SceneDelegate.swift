@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             navController = UINavigationController(rootViewController: drawViewController as! UIViewController)
             
         case .pad, .mac, .tv, .carPlay, .unspecified:
-            let homeViewController : HomeIpadViewController = HomeIpadViewController()
+            let homeViewController : IpadEndViewController = IpadEndViewController()
             
             navController = UINavigationController(rootViewController: homeViewController)
             

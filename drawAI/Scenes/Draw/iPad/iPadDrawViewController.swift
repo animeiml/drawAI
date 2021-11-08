@@ -58,6 +58,7 @@ class iPadDrawViewController: UIViewController {
         timeBarView.delegate = self
         
         timeBarView.startTimer()
+        view.backgroundColor = AppColors.backgroundColor
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

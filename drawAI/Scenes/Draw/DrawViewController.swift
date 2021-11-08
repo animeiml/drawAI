@@ -34,7 +34,7 @@ class DrawViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-//        gameCenterVM.submitScoreToLeaderboard()
+        gameCenterVM.submitScoreToLeaderboard()
     }
     
     required init?(coder: NSCoder) {

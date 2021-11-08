@@ -8,10 +8,10 @@
 import Foundation
 
 final class FileManagerStorageProvider: StorageProviderProtocol {
-    func saveImageUrl(_ imgData: Data) -> URL? {
+    func saveImageUrl(_ imgData: Data, name: String) -> URL? {
         let baseURL = FileManager.default.temporaryDirectory
         
-        let imageURL = baseURL.appendingPathComponent(UUID().uuidString).appendingPathExtension("png")
+        let imageURL = baseURL.appendingPathComponent(name).appendingPathExtension("png")
         
         do {
             try imgData.write(to: imageURL)
@@ -20,5 +20,13 @@ final class FileManagerStorageProvider: StorageProviderProtocol {
         } catch {
             return nil
         }
+    }
+    
+    func retrieveUrlForImageWithName(_ name: String) -> URL {
+        let baseURL = FileManager.default.temporaryDirectory
+       
+        let imageURL = baseURL.appendingPathComponent(name).appendingPathExtension("png")
+        
+        return imageURL
     }
 }

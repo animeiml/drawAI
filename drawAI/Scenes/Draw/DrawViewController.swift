@@ -65,11 +65,9 @@ extension DrawViewController: DrawTimerBarDelegate {
         
         viewModel.saveDrawingImgURL(drawingData)
         viewModel.saveReferenceImgURL(referenceData)
+                
+        let finishedVC: FinishedViewController = FinishedViewController()
         
-        guard let endViewModel: EndViewModel = viewModel.buildEndViewModel() else { return }
-        
-        let endViewController: EndViewController = EndViewController(viewModel: endViewModel)
-        
-        navigationController?.pushViewController(endViewController, animated: true)
+        navigationController?.pushViewController(finishedVC, animated: true)
     }
 }

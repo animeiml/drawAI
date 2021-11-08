@@ -29,7 +29,7 @@ class EndViewController: UIViewController {
         setupUI()
         setupUIData()
         DispatchQueue.global(qos: .userInitiated).async {
-            self.viewModel.processImages()
+            self.scorePercentLabel.text = String(self.viewModel.processImages())
         }
     }
   

@@ -11,7 +11,7 @@ import Vision
 final class EndViewModel {
     private(set) var drawingImgUrl: URL
     private(set) var referenceImgUrl: URL
-    private var similarityRatio: Float = 0.0
+    private var similarityRatio: Int = 0
 
     init(drawingImgUrl: URL, referenceImgUrl: URL) {
         self.drawingImgUrl = drawingImgUrl
@@ -30,20 +30,21 @@ final class EndViewModel {
         }
     }
     
-    func processImages() {
+    func processImages() -> Int {
         guard let originalFPO = featureprintObservationForImage(atURL: referenceImgUrl) else {
-            return
+            return 0
         }
         // Generate featureprints for copies and compute distances from original featureprint.
         if let contestantFPO: VNFeaturePrintObservation = featureprintObservationForImage(atURL: drawingImgUrl) {
                 do {
                     var distanceSimilarity: Float = Float(0)
                     try contestantFPO.computeDistance(&distanceSimilarity, to: originalFPO)
-                    similarityRatio = distanceSimilarity
+                    similarityRatio = Int(distanceSimilarity)
                 } catch {
                     print("Error computing distance between featureprints.")
                 }
             }
+        return similarityRatio
     }
     
     func removeSavedImages() {

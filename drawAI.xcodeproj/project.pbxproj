@@ -18,6 +18,10 @@
 		35760F8327205746004FEC9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35760F8127205746004FEC9B /* HomeViewController.swift */; };
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
 		358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */; };
+		35C7E63C27336B73004BCCAC /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7E63B27336B73004BCCAC /* AppColors.swift */; };
+		35C7E63E27336BFE004BCCAC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */; };
+		35D5BE8327397903008A0E0A /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D5BE8127397903008A0E0A /* EndViewController.swift */; };
+		35D5BE8427397903008A0E0A /* EndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35D5BE8227397903008A0E0A /* EndViewController.xib */; };
 		35DC65512729AA2900A3FF22 /* FinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DC65432729AA2900A3FF22 /* FinishedViewController.xib */; };
 		35DC65522729AA2900A3FF22 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65442729AA2900A3FF22 /* FinishedViewController.swift */; };
 		35DC65532729AA2900A3FF22 /* DrawTimerBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65472729AA2900A3FF22 /* DrawTimerBarView.swift */; };
@@ -38,8 +42,6 @@
 		79822642272BAF9F00DC7A57 /* HomeIpadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79822640272BAF9F00DC7A57 /* HomeIpadViewController.xib */; };
 		798AE179272836C7006CB063 /* Tuffy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE177272836C7006CB063 /* Tuffy.ttf */; };
 		798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798AE178272836C7006CB063 /* Tuffy_Bold.ttf */; };
-		79B71D872722F8C400E209CD /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B71D852722F8C400E209CD /* EndViewController.swift */; };
-		79B71D882722F8C400E209CD /* EndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D862722F8C400E209CD /* EndViewController.xib */; };
 		79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */; };
 		79BB1FC9272043620099015C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FC8272043620099015C /* AppDelegate.swift */; };
 		79BB1FCB272043620099015C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB1FCA272043620099015C /* SceneDelegate.swift */; };
@@ -60,6 +62,10 @@
 		35760F8127205746004FEC9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35760F8227205746004FEC9B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerStorageProvider.swift; sourceTree = "<group>"; };
+		35C7E63B27336B73004BCCAC /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		35D5BE8127397903008A0E0A /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		35D5BE8227397903008A0E0A /* EndViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndViewController.xib; sourceTree = "<group>"; };
 		35DC65432729AA2900A3FF22 /* FinishedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinishedViewController.xib; sourceTree = "<group>"; };
 		35DC65442729AA2900A3FF22 /* FinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
 		35DC65472729AA2900A3FF22 /* DrawTimerBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawTimerBarView.swift; sourceTree = "<group>"; };
@@ -80,8 +86,6 @@
 		79822640272BAF9F00DC7A57 /* HomeIpadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeIpadViewController.xib; sourceTree = "<group>"; };
 		798AE177272836C7006CB063 /* Tuffy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy.ttf; sourceTree = "<group>"; };
 		798AE178272836C7006CB063 /* Tuffy_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuffy_Bold.ttf; sourceTree = "<group>"; };
-		79B71D852722F8C400E209CD /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
-		79B71D862722F8C400E209CD /* EndViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndViewController.xib; sourceTree = "<group>"; };
 		79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShadowsIntoLight-Regular.ttf"; sourceTree = "<group>"; };
 		79BB1FC5272043620099015C /* drawAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BB1FC8272043620099015C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				354DE29A272196EC007FDC94 /* UIView+Extensions.swift */,
+				35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 		354DE29C2721970A007FDC94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				35C7E63A27336B53004BCCAC /* Colors */,
 				79B71D8927230D7900E209CD /* Fonts */,
 				354DE29D27219718007FDC94 /* ANView.swift */,
 				793922E7272ADB2E009A2A94 /* Colors.swift */,
@@ -195,6 +201,14 @@
 				7982263D272BAF5A00DC7A57 /* Iphone */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		35C7E63A27336B53004BCCAC /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				35C7E63B27336B73004BCCAC /* AppColors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		35DC65422729AA2900A3FF22 /* Draw */ = {
@@ -248,8 +262,8 @@
 		796BC31827342B9D00BF12D9 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				79B71D852722F8C400E209CD /* EndViewController.swift */,
-				79B71D862722F8C400E209CD /* EndViewController.xib */,
+				35D5BE8127397903008A0E0A /* EndViewController.swift */,
+				35D5BE8227397903008A0E0A /* EndViewController.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -402,7 +416,6 @@
 			files = (
 				35DC655A2729AA2900A3FF22 /* DrawViewController.xib in Resources */,
 				35DC65582729AA2900A3FF22 /* DrawToolsView.xib in Resources */,
-				79B71D882722F8C400E209CD /* EndViewController.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
 				798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */,
 				35174884272AFFB10043E5CB /* iPadDrawViewController.xib in Resources */,
@@ -413,6 +426,7 @@
 				35DC65512729AA2900A3FF22 /* FinishedViewController.xib in Resources */,
 				35760F8427205746004FEC9B /* HomeViewController.xib in Resources */,
 				79822642272BAF9F00DC7A57 /* HomeIpadViewController.xib in Resources */,
+				35D5BE8427397903008A0E0A /* EndViewController.xib in Resources */,
 				798AE179272836C7006CB063 /* Tuffy.ttf in Resources */,
 				796BC31E27342BFB00BF12D9 /* IpadEndViewController.xib in Resources */,
 				79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */,
@@ -429,10 +443,10 @@
 				35DC655C2729AB6A00A3FF22 /* DrawViewModel.swift in Sources */,
 				35DC65592729AA2900A3FF22 /* DrawViewController.swift in Sources */,
 				35DC65522729AA2900A3FF22 /* FinishedViewController.swift in Sources */,
-				79B71D872722F8C400E209CD /* EndViewController.swift in Sources */,
 				796BC31627341B3E00BF12D9 /* IpadFinishedViewController.swift in Sources */,
 				796BC31D27342BFB00BF12D9 /* IpadEndViewController.swift in Sources */,
 				79BB1FCD272043620099015C /* ViewController.swift in Sources */,
+				35D5BE8327397903008A0E0A /* EndViewController.swift in Sources */,
 				358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */,
 				351139542728489C00956CB6 /* AppSettings.swift in Sources */,
 				35174883272AFFB10043E5CB /* iPadDrawViewController.swift in Sources */,
@@ -442,6 +456,8 @@
 				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
 				793922E8272ADB2E009A2A94 /* Colors.swift in Sources */,
 				3511395B27284A1700956CB6 /* DefaultsStorageProvider.swift in Sources */,
+				35C7E63E27336BFE004BCCAC /* UIColor+Extensions.swift in Sources */,
+				35C7E63C27336B73004BCCAC /* AppColors.swift in Sources */,
 				35DC65552729AA2900A3FF22 /* CanvasView.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
 				354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */,
@@ -589,7 +605,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R5H255ZF9U;
+				DEVELOPMENT_TEAM = SCF6DTLWM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = drawAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -616,7 +632,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R5H255ZF9U;
+				DEVELOPMENT_TEAM = SCF6DTLWM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = drawAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

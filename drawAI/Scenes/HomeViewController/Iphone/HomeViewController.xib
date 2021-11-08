@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="ShadowsIntoLight-Regular.ttf">
-            <string>ShadowsIntoLight</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="drawAI" customModuleProvider="target">
             <connections>
-                <outlet property="logoView" destination="QLC-uB-WHV" id="F67-mr-riR"/>
                 <outlet property="startButton" destination="FF6-RI-50w" id="5rZ-kQ-rVu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,74 +18,41 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRAW" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlb-2D-eN5">
-                    <rect key="frame" x="20" y="333" width="374" height="49"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="vlb-2D-eN5" secondAttribute="height" multiplier="374:49" id="e5u-Lk-2al"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="ShadowsIntoLight" family="Shadows Into Light" pointSize="47"/>
-                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLC-uB-WHV">
-                    <rect key="frame" x="130" y="139" width="154" height="154"/>
-                    <color key="backgroundColor" name="backgroundBlueColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="QLC-uB-WHV" secondAttribute="height" multiplier="1:1" id="3Od-tP-VaT"/>
-                    </constraints>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A.I." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr3-4D-AV1">
-                    <rect key="frame" x="20" y="382" width="374" height="48"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="yr3-4D-AV1" secondAttribute="height" multiplier="187:24" id="9vV-gd-1g5"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="ShadowsIntoLight" family="Shadows Into Light" pointSize="47"/>
-                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF6-RI-50w">
-                    <rect key="frame" x="107" y="590" width="200" height="46"/>
-                    <color key="backgroundColor" name="buttonColor"/>
+                    <rect key="frame" x="107" y="594" width="200" height="50"/>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.83470141890000005" blue="0.86667460200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="FF6-RI-50w" secondAttribute="height" multiplier="100:23" id="Xpp-sz-IwG"/>
+                        <constraint firstAttribute="width" constant="200" id="Smh-3N-yjn"/>
+                        <constraint firstAttribute="height" constant="50" id="eCz-s2-b4S"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Start">
+                    <buttonConfiguration key="configuration" style="plain" title="START">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="didTouchStart:" destination="-1" eventType="touchUpInside" id="PRv-ON-Lpd"/>
+                        <action selector="didTouchStartButton:" destination="-1" eventType="touchUpInside" id="R81-XT-ntC"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-home" translatesAutoresizingMaskIntoConstraints="NO" id="AXO-6q-3rn">
+                    <rect key="frame" x="79.5" y="124" width="255" height="330"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="background"/>
             <constraints>
-                <constraint firstItem="vlb-2D-eN5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0gL-PI-LUG"/>
-                <constraint firstItem="yr3-4D-AV1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5hd-E6-9Sq"/>
-                <constraint firstItem="vlb-2D-eN5" firstAttribute="top" secondItem="QLC-uB-WHV" secondAttribute="bottom" constant="40" id="6TE-c1-lqo"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FF6-RI-50w" secondAttribute="trailing" constant="107" id="EcT-m5-6lj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QLC-uB-WHV" secondAttribute="trailing" constant="130" id="GKf-PA-x7S"/>
-                <constraint firstItem="FF6-RI-50w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="107" id="KAe-kn-cQz"/>
-                <constraint firstItem="yr3-4D-AV1" firstAttribute="top" secondItem="vlb-2D-eN5" secondAttribute="bottom" id="PY4-kr-Dxt"/>
-                <constraint firstItem="QLC-uB-WHV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="130" id="ROl-5T-keV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vlb-2D-eN5" secondAttribute="trailing" constant="20" id="e15-hk-rJg"/>
-                <constraint firstItem="QLC-uB-WHV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="95" id="lTI-6d-eVr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yr3-4D-AV1" secondAttribute="trailing" constant="20" id="r9d-7d-PRI"/>
-                <constraint firstItem="FF6-RI-50w" firstAttribute="top" secondItem="yr3-4D-AV1" secondAttribute="bottom" constant="160" id="rYh-Sp-NN0"/>
+                <constraint firstItem="FF6-RI-50w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GAq-SY-uKv"/>
+                <constraint firstItem="FF6-RI-50w" firstAttribute="top" secondItem="AXO-6q-3rn" secondAttribute="bottom" constant="140" id="Hgd-8h-OMw"/>
+                <constraint firstItem="AXO-6q-3rn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="S4h-ZC-HWf"/>
+                <constraint firstItem="AXO-6q-3rn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vNc-W1-wno"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
         </view>
     </objects>
     <resources>
-        <namedColor name="background">
-            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="backgroundBlueColor">
-            <color red="0.67599999904632568" green="0.89399999380111694" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="buttonColor">
-            <color red="0.58300000429153442" green="0.83499997854232788" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
+        <image name="logo-home" width="255" height="330"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

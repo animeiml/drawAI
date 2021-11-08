@@ -30,6 +30,8 @@
 		35DC655A2729AA2900A3FF22 /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DC65502729AA2900A3FF22 /* DrawViewController.xib */; };
 		35DC655C2729AB6A00A3FF22 /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC655B2729AB6A00A3FF22 /* DrawViewModel.swift */; };
 		793922E8272ADB2E009A2A94 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793922E7272ADB2E009A2A94 /* Colors.swift */; };
+		793BEEA227396AAB006971B0 /* MPLUSRounded1c-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 793BEEA127396AAB006971B0 /* MPLUSRounded1c-ExtraBold.ttf */; };
+		793BEEA427396C0B006971B0 /* MPLUSRounded1c-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 793BEEA327396C0B006971B0 /* MPLUSRounded1c-Black.ttf */; };
 		796BC31627341B3E00BF12D9 /* IpadFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796BC31427341B3E00BF12D9 /* IpadFinishedViewController.swift */; };
 		796BC31727341B3E00BF12D9 /* IpadFinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796BC31527341B3E00BF12D9 /* IpadFinishedViewController.xib */; };
 		796BC31D27342BFB00BF12D9 /* IpadEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796BC31B27342BFB00BF12D9 /* IpadEndViewController.swift */; };
@@ -72,6 +74,8 @@
 		35DC65502729AA2900A3FF22 /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawViewController.xib; sourceTree = "<group>"; };
 		35DC655B2729AB6A00A3FF22 /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
 		793922E7272ADB2E009A2A94 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		793BEEA127396AAB006971B0 /* MPLUSRounded1c-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-ExtraBold.ttf"; sourceTree = "<group>"; };
+		793BEEA327396C0B006971B0 /* MPLUSRounded1c-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Black.ttf"; sourceTree = "<group>"; };
 		796BC31427341B3E00BF12D9 /* IpadFinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadFinishedViewController.swift; sourceTree = "<group>"; };
 		796BC31527341B3E00BF12D9 /* IpadFinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadFinishedViewController.xib; sourceTree = "<group>"; };
 		796BC31B27342BFB00BF12D9 /* IpadEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadEndViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +309,8 @@
 				798AE178272836C7006CB063 /* Tuffy_Bold.ttf */,
 				798AE177272836C7006CB063 /* Tuffy.ttf */,
 				79B71D8A2723104600E209CD /* ShadowsIntoLight-Regular.ttf */,
+				793BEEA127396AAB006971B0 /* MPLUSRounded1c-ExtraBold.ttf */,
+				793BEEA327396C0B006971B0 /* MPLUSRounded1c-Black.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -400,12 +406,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793BEEA427396C0B006971B0 /* MPLUSRounded1c-Black.ttf in Resources */,
 				35DC655A2729AA2900A3FF22 /* DrawViewController.xib in Resources */,
 				35DC65582729AA2900A3FF22 /* DrawToolsView.xib in Resources */,
 				79B71D882722F8C400E209CD /* EndViewController.xib in Resources */,
 				79BB1FD5272043640099015C /* LaunchScreen.storyboard in Resources */,
 				798AE17A272836C7006CB063 /* Tuffy_Bold.ttf in Resources */,
 				35174884272AFFB10043E5CB /* iPadDrawViewController.xib in Resources */,
+				793BEEA227396AAB006971B0 /* MPLUSRounded1c-ExtraBold.ttf in Resources */,
 				79BB1FD2272043640099015C /* Assets.xcassets in Resources */,
 				35DC65562729AA2900A3FF22 /* CanvasView.xib in Resources */,
 				796BC31727341B3E00BF12D9 /* IpadFinishedViewController.xib in Resources */,

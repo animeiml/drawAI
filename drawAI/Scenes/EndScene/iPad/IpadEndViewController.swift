@@ -97,27 +97,24 @@ extension IpadEndViewController{
         tryAgainButton.layer.cornerRadius = tryAgainButton.frame.height / 2
         nextButton.layer.cornerRadius = nextButton.frame.height / 2
         
-        var config = UIButton.Configuration.filled()
-        config.imagePlacement = .trailing
-        config.imagePadding = 5
-        
-        nextButton.configuration?.imagePadding = nextButton.frame.width * 0.4391
+
+        nextButton.configuration?.imagePadding = nextButton.frame.width * 0.15
         
         scoreView.backgroundColor = Colors.redButtonColor.withAlphaComponent(0.15)
         scoreView.layer.borderColor = Colors.redButtonColor.withAlphaComponent(0.20).cgColor
-        scoreView.layer.borderWidth = 1
+        scoreView.layer.borderWidth = 1.43
         scoreView.layer.cornerRadius = scoreView.frame.width / 2
         
         imageView.layer.cornerRadius = userDraw.frame.height * 0.08
         imageView.layer.borderColor = Colors.redButtonColor.cgColor
-        imageView.layer.borderWidth = 1
+        imageView.layer.borderWidth = 1.43
         
         referenceImage.image = UIImage(named: "kakashi")
-        referenceImage.contentMode = .scaleAspectFit
+        referenceImage.contentMode = .scaleAspectFill
         referenceImage.layer.cornerRadius = userDraw.frame.height * 0.08
         
         userDraw.layer.borderColor = Colors.redButtonColor.cgColor
-        userDraw.layer.borderWidth = 1
+        userDraw.layer.borderWidth = 1.43
         
         userDrawImage.contentMode = .scaleAspectFit
         userDrawImage.layer.cornerRadius = userDraw.frame.height * 0.08

@@ -21,6 +21,7 @@ class IpadFinishedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = AppColors.backgroundColor
         
         mascotView.layer.cornerRadius = mascotView.frame.width * 0.0866
         

@@ -12,7 +12,9 @@ protocol StorageProviderProtocol {
     
     func retrieveImageData() -> Data?
     
-    func saveImageUrl(_ imgData: Data) -> URL?
+    func saveImageUrl(_ imgData: Data, name: String) -> URL?
+    
+    func retrieveUrlForImageWithName(_ name: String) -> URL
 }
 
 extension StorageProviderProtocol {
@@ -20,5 +22,7 @@ extension StorageProviderProtocol {
     
     func retrieveImageData() -> Data? { return nil }
     
-    func saveImageUrl(_ imgData: Data) -> URL? { return nil }
+    func saveImageUrl(_ imgData: Data, name: String) -> URL? { return nil }
+    
+    func retrieveUrlForImageWithName(_ name: String) -> URL { return URL(fileReferenceLiteralResourceName: "") }
 }

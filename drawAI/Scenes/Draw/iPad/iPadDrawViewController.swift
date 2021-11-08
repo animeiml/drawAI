@@ -7,7 +7,7 @@
 
 import UIKit
 
-class iPadDrawViewController: UIViewController, DrawViewControllerProtocl {
+class iPadDrawViewController: UIViewController {
     
     @IBOutlet private weak var timeBarView: DrawTimerBarView!
     @IBOutlet private weak var toolsView: DrawToolsView!
@@ -81,9 +81,9 @@ extension iPadDrawViewController: DrawTimerBarDelegate {
         guard let drawing: UIImage = canvasView.captureDrawImage(),
               let drawingData: Data = drawing.pngData() else { return }
         
-        viewModel.saveImageWithData(drawingData)
-        
-        guard let endViewModel: EndViewModel = viewModel.buildEndViewModel() else { return }
+//        viewModel.saveImageWithData(drawingData)
+//
+//        guard let endViewModel: EndViewModel = viewModel.buildEndViewModel() else { return }
         
         // TODO: Navigate to the iPadEndViewController
         

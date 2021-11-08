@@ -10,17 +10,27 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var logoView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    @IBAction func didTouchStartButton(_ sender: Any) {
+        let drawVC: DrawViewController = DrawViewController()
+        
+        navigationController?.pushViewController(drawVC, animated: true)
+    }
+}
+
+extension HomeViewController {
+    func setupUI() {
+        view.backgroundColor = AppColors.backgroundColor
+        
+        startButton.backgroundColor = AppColors.primaryColor
+        startButton.titleLabel?.textColor = AppColors.backgroundColor
         startButton.layer.cornerRadius = startButton.frame.height/2
         
-        logoView.layer.cornerRadius = logoView.frame.height * 0.14
-        self.navigationController?.isNavigationBarHidden = true
-    }
-    @IBAction func didTouchStart(_ sender: Any) {
-        let drawViewC: DrawViewController = DrawViewController()
-         self.navigationController?.pushViewController(drawViewC, animated: true)
+        navigationController?.isNavigationBarHidden = true
     }
 }

@@ -16,6 +16,7 @@ class IpadEndViewController: UIViewController {
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var tryAgainButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var niceDrawLabel: UILabel!
     
     
     
@@ -92,28 +93,40 @@ class IpadEndViewController: UIViewController {
 
 extension IpadEndViewController{
     func setupUI() {
+        view.backgroundColor = AppColors.backgroundColor
+        
         userDraw.layer.cornerRadius = userDraw.frame.height * 0.08
         homeButton.layer.cornerRadius = homeButton.frame.height / 2
         tryAgainButton.layer.cornerRadius = tryAgainButton.frame.height / 2
         nextButton.layer.cornerRadius = nextButton.frame.height / 2
         
-
-        nextButton.configuration?.imagePadding = nextButton.frame.width * 0.15
         
-        scoreView.backgroundColor = Colors.redButtonColor.withAlphaComponent(0.15)
-        scoreView.layer.borderColor = Colors.redButtonColor.withAlphaComponent(0.20).cgColor
+        niceDrawLabel.textColor = AppColors.primaryColor
+        
+        homeButton.backgroundColor = AppColors.primaryColor
+        homeButton.titleLabel?.textColor = AppColors.backgroundColor
+        
+        tryAgainButton.backgroundColor = AppColors.primaryColor
+        tryAgainButton.setTitleColor(AppColors.backgroundColor, for: .normal)
+        
+        nextButton.configuration?.imagePadding = nextButton.frame.width * 0.15
+        nextButton.backgroundColor = AppColors.accentColor
+        nextButton.titleLabel?.textColor = .black
+        
+        scoreView.backgroundColor = AppColors.primaryColor.withAlphaComponent(0.15)
+        scoreView.layer.borderColor = AppColors.primaryColor.withAlphaComponent(0.2).cgColor
         scoreView.layer.borderWidth = 1.43
         scoreView.layer.cornerRadius = scoreView.frame.width / 2
         
         imageView.layer.cornerRadius = userDraw.frame.height * 0.08
-        imageView.layer.borderColor = Colors.redButtonColor.cgColor
+        imageView.layer.borderColor = AppColors.primaryColor.cgColor
         imageView.layer.borderWidth = 1.43
         
         referenceImage.image = UIImage(named: "kakashi")
         referenceImage.contentMode = .scaleAspectFill
         referenceImage.layer.cornerRadius = userDraw.frame.height * 0.08
         
-        userDraw.layer.borderColor = Colors.redButtonColor.cgColor
+        userDraw.layer.borderColor = AppColors.primaryColor.cgColor
         userDraw.layer.borderWidth = 1.43
         
         userDrawImage.contentMode = .scaleAspectFit

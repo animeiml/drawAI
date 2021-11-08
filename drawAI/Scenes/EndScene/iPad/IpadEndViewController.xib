@@ -31,6 +31,7 @@
                 <outlet property="leadingReferenceLandscape" destination="cwC-qR-WCH" id="Rga-xL-yZD"/>
                 <outlet property="leadingReferencePortrait" destination="HiE-3L-GhA" id="cdH-vO-Wed"/>
                 <outlet property="nextButton" destination="33Z-S2-85w" id="5Eo-aM-1hs"/>
+                <outlet property="niceDrawLabel" destination="gjR-Id-KQr" id="sKW-v9-zql"/>
                 <outlet property="referenceImage" destination="USD-rx-ysn" id="Xj4-Hq-BpX"/>
                 <outlet property="scoreView" destination="G9c-FL-cVV" id="5Dh-Ij-EDY"/>
                 <outlet property="topHomePortrait" destination="wFP-sq-V7N" id="mrM-HF-T4J"/>
@@ -80,8 +81,8 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="bold">
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                         </preferredSymbolConfiguration>
-                        <fontDescription key="titleFontDescription" name="RoundedMplus1c-ExtraBold" family="Rounded Mplus 1c" pointSize="22"/>
-                        <color key="baseForegroundColor" red="0.99992686509999995" green="1" blue="0.99987345930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="titleFontDescription" name="RoundedMplus1c-ExtraBold" family="Rounded Mplus 1c" pointSize="23"/>
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                 </button>
                 <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="YNQ-QQ-y2J">

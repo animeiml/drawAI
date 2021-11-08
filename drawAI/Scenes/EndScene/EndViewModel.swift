@@ -13,9 +13,9 @@ final class EndViewModel {
     private(set) var referenceImgUrl: URL
     private var similarityRatio: Int = 0
 
-    init(drawingImgUrl: URL, referenceImgUrl: URL) {
-        self.drawingImgUrl = drawingImgUrl
-        self.referenceImgUrl = referenceImgUrl
+    init(storageProvider: StorageProviderProtocol = FileManagerStorageProvider()) {
+        self.drawingImgUrl = storageProvider.retrieveUrlForImageWithName(AppSettings.Keys.drawingImgUrlKey)
+        self.referenceImgUrl = storageProvider.retrieveUrlForImageWithName(AppSettings.Keys.referenceImgUrlKey)
     }
     
     func featureprintObservationForImage(atURL url: URL) -> VNFeaturePrintObservation? {

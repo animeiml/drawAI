@@ -38,8 +38,7 @@ class EndViewController: UIViewController {
     }
 
     @IBAction func didTouchHome(_ sender: Any) {
-       let homeViewC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        self.navigationController?.pushViewController(homeViewC, animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func didTouchNextRound(_ sender: UIButton) {

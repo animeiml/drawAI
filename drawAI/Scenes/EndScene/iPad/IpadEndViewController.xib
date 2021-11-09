@@ -67,6 +67,9 @@
                         <fontDescription key="titleFontDescription" name="RoundedMplus1c-ExtraBold" family="Rounded Mplus 1c" pointSize="22"/>
                         <color key="baseForegroundColor" red="0.99992686509999995" green="1" blue="0.99987345930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="didTouchHomeButton:" destination="-1" eventType="touchUpInside" id="MO9-eb-cAY"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-S2-85w">
                     <rect key="frame" x="286" y="1049" width="262" height="60"/>
@@ -84,6 +87,9 @@
                         <fontDescription key="titleFontDescription" name="RoundedMplus1c-ExtraBold" family="Rounded Mplus 1c" pointSize="23"/>
                         <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="didTouchNextButton:" destination="-1" eventType="touchUpInside" id="6Rd-H9-8bI"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="YNQ-QQ-y2J">
                     <rect key="frame" x="428" y="204" width="273" height="387"/>
@@ -143,6 +149,9 @@
                         <fontDescription key="titleFontDescription" name="RoundedMplus1c-ExtraBold" family="Rounded Mplus 1c" pointSize="22"/>
                         <color key="baseForegroundColor" red="0.99992686509999995" green="1" blue="0.99987345930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="didTouchTryButton:" destination="-1" eventType="touchUpInside" id="qXF-HT-MCE"/>
+                    </connections>
                 </button>
                 <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXn-L6-VSR">
                     <rect key="frame" x="403" y="204" width="25" height="25"/>

@@ -95,17 +95,16 @@ class iPadDrawViewController: UIViewController {
 extension iPadDrawViewController: DrawTimerBarDelegate {
     func didFinishTime() {
         guard let drawing: UIImage = canvasView.captureDrawImage(),
-              let drawingData: Data = drawing.pngData() else { return }
+              let drawingData: Data = drawing.pngData(),
+              let reference: UIImage = UIImage(named: "espadinha"),
+              let referenceData: Data = reference.pngData() else { return }
         
-//        viewModel.saveImageWithData(drawingData)
-//
-//        guard let endViewModel: EndViewModel = viewModel.buildEndViewModel() else { return }
+        viewModel.saveDrawingImgURL(drawingData)
+        viewModel.saveReferenceImgURL(referenceData)
+                
+        let finishedVC: IpadFinishedViewController = IpadFinishedViewController()
         
-        // TODO: Navigate to the iPadEndViewController
-        
-      //  let endViewController: IpadEndViewController = IpadEndViewController(viewModel: endViewModel)
-
-     //  navigationController?.pushViewController(endViewController, animated: true)
+        navigationController?.pushViewController(finishedVC, animated: true)
     }
 }
 

@@ -141,7 +141,6 @@ extension IpadEndViewController{
         if UIDevice.current.orientation.isPortrait {
             applyPortraitDynamicConstraints()
         } else if UIDevice.current.orientation.isLandscape {
-            print("foi")
             applyLandscapeDynamicConstraints()
         }
     }

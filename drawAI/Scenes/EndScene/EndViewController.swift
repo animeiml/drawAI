@@ -28,9 +28,7 @@ class EndViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupUIData()
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.scorePercentLabel.text = String(self.viewModel.processImages())
-        }
+        self.scorePercentLabel.text = String(self.viewModel.processImages())
     }
   
     override func viewDidDisappear(_ animated: Bool) {

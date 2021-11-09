@@ -30,6 +30,7 @@ extension CanvasView {
         guard let canvasView: PKCanvasView = canvasView else { return }
         
         canvasView.drawingPolicy = .anyInput
+        canvasView.backgroundColor = Colors.backgroundColor
         canvasView.drawing = PKDrawing()
                 
         self.addSubview(canvasView)

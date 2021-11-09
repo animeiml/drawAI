@@ -27,7 +27,7 @@ class DrawViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         canvasView.setupDrawing()
-        timerBarView.startTimer()
+         timerBarView.startTimer()
     }
     
     required init?(coder: NSCoder) {

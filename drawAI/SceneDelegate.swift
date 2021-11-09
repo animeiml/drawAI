@@ -17,10 +17,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
+                
+        let navController: UINavigationController
+                    
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            let iPhoneHomeViewController = HomeViewController()
+            
+            navController = UINavigationController(rootViewController: iPhoneHomeViewController)
+            
+        case .pad, .mac, .tv, .carPlay, .unspecified:
+            let iPadHomeViewController : HomeIpadViewController = HomeIpadViewController()
+            
+            navController = UINavigationController(rootViewController: iPadHomeViewController)
+        }
         
-        let drawViewController: HomeViewController = HomeViewController()
-        let navController: UINavigationController = UINavigationController(rootViewController: drawViewController)
-
+                
         window = UIWindow(windowScene: windowScene)
 
         window?.frame = UIScreen.main.bounds

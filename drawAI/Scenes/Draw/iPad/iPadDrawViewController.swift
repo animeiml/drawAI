@@ -58,6 +58,22 @@ class iPadDrawViewController: UIViewController {
         timeBarView.delegate = self
         
         timeBarView.startTimer()
+        view.backgroundColor = AppColors.backgroundColor
+        referenceImageView.backgroundColor = AppColors.backgroundColor
+        
+        canvasView.layer.cornerRadius = canvasView.frame.height * 0.0549
+        canvasView.layer.borderWidth = 1
+        canvasView.layer.borderColor = AppColors.primaryColor.cgColor
+        
+        referenceImageView.layer.cornerRadius = canvasView.frame.height * 0.0549
+        referenceImageView.layer.borderWidth = 1
+        referenceImageView.layer.borderColor = AppColors.primaryColor.cgColor
+        
+//        toolsView.layer.cornerRadius = canvasView.frame.height * 0.0549
+//        toolsView.layer.borderWidth = 1
+//        toolsView.layer.borderColor = AppColors.primaryColor.cgColor
+        
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -87,9 +103,9 @@ extension iPadDrawViewController: DrawTimerBarDelegate {
         
         // TODO: Navigate to the iPadEndViewController
         
-//        let endViewController: EndViewController = EndViewController(viewModel: endViewModel)
-//
-//        navigationController?.pushViewController(endViewController, animated: true)
+      //  let endViewController: IpadEndViewController = IpadEndViewController(viewModel: endViewModel)
+
+     //  navigationController?.pushViewController(endViewController, animated: true)
     }
 }
 

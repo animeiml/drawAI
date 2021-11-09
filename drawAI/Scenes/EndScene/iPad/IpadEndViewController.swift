@@ -50,7 +50,7 @@ class IpadEndViewController: UIViewController {
     @IBOutlet weak var centerNextLandscape: NSLayoutConstraint!
     @IBOutlet weak var topNextLandscape: NSLayoutConstraint!
     
-    //private let viewModel: EndViewModel
+    private let viewModel: EndViewModel
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         applyOrientationConstraints()
@@ -64,31 +64,31 @@ class IpadEndViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         
-        //setupUIData()
+        setupUIData()
 
         // Do any additional setup after loading the view.
     }
     
-//    required init?(coder: NSCoder) {
-//        fatalError()
-//    }
-//
-//    init(viewModel: EndViewModel) {
-//        self.viewModel = viewModel
-//
-//        super.init(nibName: nil, bundle: nil)
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    required init?(coder: NSCoder) {
+        fatalError()
     }
-    */
 
+    init(viewModel: EndViewModel) {
+        self.viewModel = viewModel
+
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    @IBAction func didTouchHomeButton(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func didTouchTryButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func didTouchNextButton(_ sender: Any) {
+    }
 }
 
 extension IpadEndViewController{
@@ -133,9 +133,9 @@ extension IpadEndViewController{
         userDrawImage.layer.cornerRadius = userDraw.frame.height * 0.08
     }
     
-//    func setupUIData() {
-//        userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
-//    }
+    func setupUIData() {
+        userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
+    }
     
     private func applyOrientationConstraints() {
         if UIDevice.current.orientation.isPortrait {

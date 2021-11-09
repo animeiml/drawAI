@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,10 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeIpadViewController" customModule="drawAI" customModuleProvider="target">
             <connections>
-                <outlet property="bottomButtonPortrait" destination="wyQ-iA-y5A" id="64c-MC-CwR"/>
-                <outlet property="logoTopLandscape" destination="eLb-RF-bFp" id="VZv-a2-mFz"/>
-                <outlet property="logoTopPortrait" destination="dIn-81-6s4" id="v7w-71-9xu"/>
-                <outlet property="startBottomLandscape" destination="Qty-AN-6cu" id="iqy-cs-71o"/>
                 <outlet property="startButton" destination="mGP-nI-72e" id="Sf7-ay-Fbi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-nI-72e">
-                    <rect key="frame" x="286" y="1049" width="262" height="60"/>
+                    <rect key="frame" x="286" y="1044" width="262" height="60"/>
                     <color key="backgroundColor" name="backgroundBlueColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="Bw1-WA-Q0L"/>
@@ -40,34 +36,26 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-home" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-RC-LB3">
-                    <rect key="frame" x="196.5" y="259" width="441" height="589"/>
+                    <rect key="frame" x="217" y="347" width="400" height="500"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="589" id="2Kt-fy-Hsk"/>
-                        <constraint firstAttribute="width" secondItem="9sb-RC-LB3" secondAttribute="height" multiplier="441:589" id="BCL-Uc-oVu"/>
+                        <constraint firstAttribute="height" constant="500" id="Ohx-tF-ses"/>
+                        <constraint firstAttribute="width" constant="400" id="jQl-6z-SNw"/>
                     </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="background"/>
             <constraints>
-                <constraint firstItem="mGP-nI-72e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GXw-ci-Ypu"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mGP-nI-72e" secondAttribute="bottom" constant="35" id="Qty-AN-6cu"/>
-                <constraint firstItem="9sb-RC-LB3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SmQ-Sl-1bn"/>
-                <constraint firstItem="9sb-RC-LB3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="235" id="dIn-81-6s4"/>
-                <constraint firstItem="9sb-RC-LB3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eLb-RF-bFp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mGP-nI-72e" secondAttribute="bottom" constant="65" id="wyQ-iA-y5A"/>
+                <constraint firstItem="mGP-nI-72e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H7g-42-gaf"/>
+                <constraint firstItem="9sb-RC-LB3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V38-PC-gK5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mGP-nI-72e" secondAttribute="bottom" constant="70" id="fJV-1P-KWW"/>
+                <constraint firstItem="9sb-RC-LB3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oDw-aI-5nK"/>
             </constraints>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="Qty-AN-6cu"/>
-                    <exclude reference="eLb-RF-bFp"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="130.15075376884423" y="79.136690647482027"/>
         </view>
     </objects>
     <resources>
-        <image name="logo-home" width="443" height="590.5"/>
+        <image name="logo-home" width="255" height="330"/>
         <namedColor name="background">
             <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

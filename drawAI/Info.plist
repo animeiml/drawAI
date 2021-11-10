@@ -27,5 +27,7 @@
 		<string>MPLUSRounded1c-ExtraBold.ttf</string>
 		<string>MPLUSRounded1c-Black.ttf</string>
 	</array>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
 </dict>
 </plist>

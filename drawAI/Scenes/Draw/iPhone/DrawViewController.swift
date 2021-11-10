@@ -9,10 +9,11 @@ import UIKit
 import Foundation
 
 class DrawViewController: UIViewController {
-    @IBOutlet weak var referenceImageImageView: UIImageView!
-    @IBOutlet weak var canvasView: CanvasView!
-    @IBOutlet weak var toolsView: DrawToolsView!
-    @IBOutlet weak var timerBarView: DrawTimerBarView!
+    @IBOutlet private weak var referenceImageImageView: UIImageView!
+    @IBOutlet private weak var canvasView: CanvasView!
+    @IBOutlet private weak var toolsView: DrawToolsView!
+    @IBOutlet private weak var timerBarView: DrawTimerBarView!
+    @IBOutlet private weak var separatorView: UIView!
     
     private var viewModel: DrawViewModel
 
@@ -46,6 +47,10 @@ class DrawViewController: UIViewController {
 extension DrawViewController {
     func setupUI() {
         view.backgroundColor = AppColors.backgroundColor
+        
+        separatorView.backgroundColor = AppColors.primaryColor.withAlphaComponent(0.5)
+        separatorView.layer.cornerRadius = separatorView.frame.height/2
+        separatorView.layer.masksToBounds = true
     }
 }
 

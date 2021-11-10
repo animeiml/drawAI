@@ -20,8 +20,8 @@ protocol DrawToolsDelegate: AnyObject {
 }
 
 class DrawToolsView: ANView {
-    @IBOutlet private weak var pencilButton: UIButton!
-    @IBOutlet private weak var eraserButton: UIButton!
+    @IBOutlet private weak var pencilButton: RoundedButton!
+    @IBOutlet private weak var eraserButton: RoundedButton!
     
     weak var delegate: DrawToolsDelegate?
     
@@ -54,23 +54,20 @@ extension DrawToolsView {
 
 extension DrawToolsView {
     private func setupUI() {
-        pencilButton.layer.borderWidth = 1
-        eraserButton.layer.borderWidth = 1
-        
-        pencilButton.setRounded()
-        eraserButton.setRounded()
+        pencilButton.borderWidth = 1
+        eraserButton.borderWidth = 1
     }
     
     private func setupUIData() {
         guard let viewModel: DrawToolsViewModel = viewModel else { return }
         
         pencilButton.tintColor = viewModel.pencilButtonTintColor
-        pencilButton.layer.borderColor = viewModel.pencilButtonBorderColor
         pencilButton.setImage(UIImage(named: viewModel.pencilButtonImageName), for: .normal)
+        pencilButton.borderColor = viewModel.pencilButtonBorderColor
         
         eraserButton.tintColor = viewModel.eraserButtonTintColor
-        eraserButton.layer.borderColor = viewModel.eraserButtonBorderColor
         eraserButton.setImage(UIImage(named: viewModel.eraserButtonImageName), for: .normal)
+        eraserButton.borderColor = viewModel.eraserButtonBorderColor
     }
     
     private func chooseTool(_ tool: EnabledTool) {

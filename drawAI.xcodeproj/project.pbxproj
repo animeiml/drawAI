@@ -19,6 +19,7 @@
 		35760F8427205746004FEC9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35760F8227205746004FEC9B /* HomeViewController.xib */; };
 		358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */; };
 		35A10726273C0A8000738DB5 /* DrawToolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A10725273C0A8000738DB5 /* DrawToolsViewModel.swift */; };
+		35A1072A273C25CE00738DB5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A10729273C25CE00738DB5 /* RoundedButton.swift */; };
 		35C7E63C27336B73004BCCAC /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7E63B27336B73004BCCAC /* AppColors.swift */; };
 		35C7E63E27336BFE004BCCAC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */; };
 		35D5BE8327397903008A0E0A /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D5BE8127397903008A0E0A /* EndViewController.swift */; };
@@ -66,6 +67,7 @@
 		35760F8227205746004FEC9B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerStorageProvider.swift; sourceTree = "<group>"; };
 		35A10725273C0A8000738DB5 /* DrawToolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawToolsViewModel.swift; sourceTree = "<group>"; };
+		35A10729273C25CE00738DB5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		35C7E63B27336B73004BCCAC /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		35D5BE8127397903008A0E0A /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		354DE29C2721970A007FDC94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				35A10728273C25A000738DB5 /* Components */,
 				35C7E63A27336B53004BCCAC /* Colors */,
 				79B71D8927230D7900E209CD /* Fonts */,
 				354DE29D27219718007FDC94 /* ANView.swift */,
@@ -207,6 +210,14 @@
 				7982263D272BAF5A00DC7A57 /* Iphone */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		35A10728273C25A000738DB5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				35A10729273C25CE00738DB5 /* RoundedButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		35C7E63A27336B53004BCCAC /* Colors */ = {
@@ -464,6 +475,7 @@
 				351139582728496100956CB6 /* StorageProviderProtocol.swift in Sources */,
 				355EFA21272AD14A005E3735 /* EndViewModel.swift in Sources */,
 				79822641272BAF9F00DC7A57 /* HomeIpadViewController.swift in Sources */,
+				35A1072A273C25CE00738DB5 /* RoundedButton.swift in Sources */,
 				354DE29E27219718007FDC94 /* ANView.swift in Sources */,
 				793922E8272ADB2E009A2A94 /* Colors.swift in Sources */,
 				3511395B27284A1700956CB6 /* DefaultsStorageProvider.swift in Sources */,

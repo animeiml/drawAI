@@ -22,8 +22,8 @@ final class DrawToolsViewModel {
         return isPencilEnabled ? AppColors.primaryColor.withAlphaComponent(0.15) : AppColors.disabledColor.withAlphaComponent(0.15)
     }
     
-    var pencilButtonBorderColor: CGColor {
-        return isPencilEnabled ? AppColors.primaryColor.withAlphaComponent(0.20).cgColor : AppColors.disabledColor.withAlphaComponent(0.20).cgColor
+    var pencilButtonBorderColor: UIColor {
+        return isPencilEnabled ? AppColors.primaryColor.withAlphaComponent(0.20) : AppColors.disabledColor.withAlphaComponent(0.20)
     }
     
     var pencilButtonImageName: String {
@@ -34,8 +34,8 @@ final class DrawToolsViewModel {
         return isEraserEnabled ? AppColors.primaryColor.withAlphaComponent(0.15) : AppColors.disabledColor.withAlphaComponent(0.15)
     }
     
-    var eraserButtonBorderColor: CGColor {
-        return isEraserEnabled ? AppColors.primaryColor.withAlphaComponent(0.20).cgColor : AppColors.disabledColor.withAlphaComponent(0.20).cgColor
+    var eraserButtonBorderColor: UIColor {
+        return isEraserEnabled ? AppColors.primaryColor.withAlphaComponent(0.20) : AppColors.disabledColor.withAlphaComponent(0.20)
     }
     
     var eraserButtonImageName: String {

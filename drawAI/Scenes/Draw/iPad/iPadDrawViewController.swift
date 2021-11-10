@@ -57,6 +57,8 @@ class iPadDrawViewController: UIViewController {
         toolsView.delegate = self
         timeBarView.delegate = self
         
+        toolsView.setup()
+        
         timeBarView.startTimer()
         view.backgroundColor = AppColors.backgroundColor
         referenceImageView.backgroundColor = AppColors.backgroundColor
@@ -68,11 +70,7 @@ class iPadDrawViewController: UIViewController {
         referenceImageView.layer.cornerRadius = canvasView.frame.height * 0.0549
         referenceImageView.layer.borderWidth = 1
         referenceImageView.layer.borderColor = AppColors.primaryColor.cgColor
-        
-//        toolsView.layer.cornerRadius = canvasView.frame.height * 0.0549
-//        toolsView.layer.borderWidth = 1
-//        toolsView.layer.borderColor = AppColors.primaryColor.cgColor
-        
+                
         self.navigationController?.isNavigationBarHidden = true
     }
     

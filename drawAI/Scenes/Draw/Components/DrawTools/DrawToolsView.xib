@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,10 +21,10 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri2-2H-Oep" userLabel="Pencil">
                     <rect key="frame" x="9" y="8" width="72" height="72"/>
+                    <color key="tintColor" red="0.13333333333333333" green="0.30588235294117649" blue="0.92941176470588238" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" image="pencil" title="">
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                        <color key="baseBackgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                     </buttonConfiguration>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
@@ -34,10 +35,9 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A31-Qo-1GN" userLabel="Erase">
                     <rect key="frame" x="9" y="100" width="72" height="72"/>
+                    <color key="tintColor" red="0.47450980392156861" green="0.47843137254901957" blue="0.4823529411764706" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" image="eraser">
-                        <color key="baseBackgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                    </buttonConfiguration>
+                    <buttonConfiguration key="configuration" style="filled" image="eraser"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -63,10 +63,10 @@
         </view>
     </objects>
     <resources>
-        <image name="eraser" width="25" height="25"/>
-        <image name="pencil" width="24" height="24"/>
+        <image name="eraser" width="24.5" height="25"/>
+        <image name="pencil" width="25" height="25.5"/>
         <namedColor name="background">
-            <color red="0.99579399820000003" green="0.96897250410000002" blue="0.94509500270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

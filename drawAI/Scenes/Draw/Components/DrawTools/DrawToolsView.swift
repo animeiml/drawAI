@@ -10,7 +10,8 @@ import UIKit
 import GameKit
 
 enum EnabledTool {
-    case pencil, eraser
+    case pencil
+    case eraser
 }
 
 protocol DrawToolsDelegate: AnyObject {

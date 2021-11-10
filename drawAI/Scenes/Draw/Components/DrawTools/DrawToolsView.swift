@@ -7,6 +7,11 @@
 
 import Foundation
 import UIKit
+import GameKit
+
+enum EnabledTool {
+    case pencil, eraser
+}
 
 protocol DrawToolsDelegate: AnyObject {
     func onPencilChosen()
@@ -14,59 +19,61 @@ protocol DrawToolsDelegate: AnyObject {
 }
 
 class DrawToolsView: ANView {
-    weak var delegate: DrawToolsDelegate?
-    
     @IBOutlet private weak var pencilButton: UIButton!
     @IBOutlet private weak var eraserButton: UIButton!
     
-    override func awakeFromNib() {
-        debugPrint("==== \(pencilButton.frame) ====")
-        
-        pencilButton.tintColor = AppColors.primaryColor.withAlphaComponent(0.15)
-        pencilButton.layer.borderColor = AppColors.primaryColor.withAlphaComponent(0.20).cgColor
-        pencilButton.layer.borderWidth = 1
-        pencilButton.setImage(UIImage(named: "pencil"), for: .normal)
+    weak var delegate: DrawToolsDelegate?
     
-        eraserButton.tintColor = AppColors.disabledColor.withAlphaComponent(0.15)
-        eraserButton.layer.borderColor = AppColors.disabledColor.withAlphaComponent(0.20).cgColor
-        eraserButton.layer.borderWidth = 1
-        eraserButton.setImage(UIImage(named: "eraser-disable"), for: .normal)
+    private var viewModel: DrawToolsViewModel?
         
-
-        pencilButton.setRounded()
-        eraserButton.setRounded()
-        
-        
-
+    override func awakeFromNib() {
+        setupUI()
         super.awakeFromNib()
     }
     
     @IBAction func onPencilTouched(_ sender: Any) {
         delegate?.onPencilChosen()
-        
-        pencilButton.tintColor = AppColors.primaryColor.withAlphaComponent(0.15)
-        pencilButton.layer.borderColor = AppColors.primaryColor.withAlphaComponent(0.20).cgColor
-        pencilButton.layer.borderWidth = 1
-        pencilButton.setImage(UIImage(named: "pencil"), for: .normal)
-        
-        eraserButton.tintColor = AppColors.disabledColor.withAlphaComponent(0.15)
-        eraserButton.layer.borderColor = AppColors.disabledColor.withAlphaComponent(0.20).cgColor
-        eraserButton.layer.borderWidth = 1
-        eraserButton.setImage(UIImage(named: "eraser-disable"), for: .normal)
-        
+        chooseTool(.pencil)
     }
     
     @IBAction func onEraserTouched(_ sender: Any) {
         delegate?.onEraserChosen()
+        chooseTool(.eraser)
+    }
+}
+
+extension DrawToolsView {
+    func setup(viewModel: DrawToolsViewModel = DrawToolsViewModel()) {
+        self.viewModel = viewModel
         
-        pencilButton.tintColor = AppColors.disabledColor.withAlphaComponent(0.15)
-        pencilButton.layer.borderColor = AppColors.disabledColor.withAlphaComponent(0.20).cgColor
+        setupUI()
+        setupUIData()
+    }
+}
+
+extension DrawToolsView {
+    private func setupUI() {
         pencilButton.layer.borderWidth = 1
-        pencilButton.setImage(UIImage(named: "pencil-disable"), for: .normal)
-        
-        eraserButton.tintColor = AppColors.primaryColor.withAlphaComponent(0.15)
-        eraserButton.layer.borderColor = AppColors.primaryColor.withAlphaComponent(0.20).cgColor
         eraserButton.layer.borderWidth = 1
-        eraserButton.setImage(UIImage(named: "eraser"), for: .normal)
+        
+        pencilButton.setRounded()
+        eraserButton.setRounded()
+    }
+    
+    private func setupUIData() {
+        guard let viewModel: DrawToolsViewModel = viewModel else { return }
+        
+        pencilButton.tintColor = viewModel.pencilButtonTintColor
+        pencilButton.layer.borderColor = viewModel.pencilButtonBorderColor
+        pencilButton.setImage(UIImage(named: viewModel.pencilButtonImageName), for: .normal)
+        
+        eraserButton.tintColor = viewModel.eraserButtonTintColor
+        eraserButton.layer.borderColor = viewModel.eraserButtonBorderColor
+        eraserButton.setImage(UIImage(named: viewModel.eraserButtonImageName), for: .normal)
+    }
+    
+    private func chooseTool(_ tool: EnabledTool) {
+        viewModel?.setEnabledTool(tool)
+        setupUIData()
     }
 }

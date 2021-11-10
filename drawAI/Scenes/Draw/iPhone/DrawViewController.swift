@@ -22,6 +22,8 @@ class DrawViewController: UIViewController {
         toolsView.delegate = self
         timerBarView.delegate = self
         
+        toolsView.setup()
+        
         setupUI()
     }
     

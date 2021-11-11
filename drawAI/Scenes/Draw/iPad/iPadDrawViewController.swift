@@ -70,7 +70,7 @@ class iPadDrawViewController: UIViewController {
         referenceImageView.layer.borderWidth = 1
         referenceImageView.layer.borderColor = AppColors.primaryColor.cgColor
         referenceImageView.backgroundColor = AppColors.backgroundColor
-        referenceImageView.image = viewModel.randomReferenceImg
+        referenceImageView.image = viewModel.referenceImg
         referenceImageView.grayscaleImage()
 
         self.navigationController?.isNavigationBarHidden = true

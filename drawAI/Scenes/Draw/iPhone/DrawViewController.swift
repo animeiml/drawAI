@@ -30,7 +30,7 @@ class DrawViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         canvasView.setupDrawing()
-         timerBarView.startTimer()
+        timerBarView.startTimer()
     }
     
     required init?(coder: NSCoder) {
@@ -52,7 +52,7 @@ extension DrawViewController {
         referenceImageImageView.layer.borderWidth = 1
         referenceImageImageView.layer.borderColor = AppColors.primaryColor.cgColor
         referenceImageImageView.backgroundColor = AppColors.backgroundColor
-        referenceImageImageView.image = viewModel.randomReferenceImg
+        referenceImageImageView.image = viewModel.referenceImg
         referenceImageImageView.grayscaleImage()
         
         separatorView.backgroundColor = AppColors.primaryColor.withAlphaComponent(0.5)

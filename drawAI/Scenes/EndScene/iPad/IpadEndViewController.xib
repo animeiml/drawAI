@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -33,6 +33,7 @@
                 <outlet property="nextButton" destination="33Z-S2-85w" id="5Eo-aM-1hs"/>
                 <outlet property="niceDrawLabel" destination="gjR-Id-KQr" id="sKW-v9-zql"/>
                 <outlet property="referenceImage" destination="USD-rx-ysn" id="Xj4-Hq-BpX"/>
+                <outlet property="scoreValueLabel" destination="Rk9-Xp-NtX" id="ARe-Lb-TSt"/>
                 <outlet property="scoreView" destination="G9c-FL-cVV" id="5Dh-Ij-EDY"/>
                 <outlet property="topHomePortrait" destination="wFP-sq-V7N" id="mrM-HF-T4J"/>
                 <outlet property="topNextLandscape" destination="jWD-To-0oZ" id="edQ-4x-T0o"/>

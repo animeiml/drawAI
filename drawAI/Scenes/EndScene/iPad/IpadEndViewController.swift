@@ -8,17 +8,16 @@
 import UIKit
 
 class IpadEndViewController: UIViewController {
-    @IBOutlet weak var userDrawImage: UIImageView!
-    @IBOutlet weak var referenceImage: UIImageView!
-    @IBOutlet weak var imageView: UIView!
-    @IBOutlet weak var scoreView: UIView!
-    @IBOutlet weak var userDraw: UIView!
-    @IBOutlet weak var homeButton: UIButton!
-    @IBOutlet weak var tryAgainButton: UIButton!
-    @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var niceDrawLabel: UILabel!
-    
-    
+    @IBOutlet private weak var userDrawImage: UIImageView!
+    @IBOutlet private weak var referenceImage: UIImageView!
+    @IBOutlet private weak var imageView: UIView!
+    @IBOutlet private weak var scoreView: UIView!
+    @IBOutlet private weak var userDraw: UIView!
+    @IBOutlet private weak var homeButton: UIButton!
+    @IBOutlet private weak var tryAgainButton: UIButton!
+    @IBOutlet private weak var nextButton: UIButton!
+    @IBOutlet private weak var niceDrawLabel: UILabel!
+    @IBOutlet private weak var scoreValueLabel: UILabel!
     
     //constraints
     
@@ -84,10 +83,17 @@ class IpadEndViewController: UIViewController {
     }
     
     @IBAction func didTouchTryButton(_ sender: Any) {
+        let drawVM: DrawViewModel = viewModel.buildDrawViewModel()
         
+        let drawVC: iPadDrawViewController = iPadDrawViewController(viewModel: drawVM)
+        
+        navigationController?.pushViewController(drawVC, animated: true)
     }
     
     @IBAction func didTouchNextButton(_ sender: Any) {
+        let drawVC: iPadDrawViewController = iPadDrawViewController()
+        
+        navigationController?.pushViewController(drawVC, animated: true)
     }
 }
 
@@ -99,7 +105,6 @@ extension IpadEndViewController{
         homeButton.layer.cornerRadius = homeButton.frame.height / 2
         tryAgainButton.layer.cornerRadius = tryAgainButton.frame.height / 2
         nextButton.layer.cornerRadius = nextButton.frame.height / 2
-        
         
         niceDrawLabel.textColor = AppColors.primaryColor
         
@@ -122,7 +127,6 @@ extension IpadEndViewController{
         imageView.layer.borderColor = AppColors.primaryColor.cgColor
         imageView.layer.borderWidth = 1.43
         
-        referenceImage.image = UIImage(named: "kakashi")
         referenceImage.contentMode = .scaleAspectFill
         referenceImage.layer.cornerRadius = userDraw.frame.height * 0.08
         
@@ -136,6 +140,7 @@ extension IpadEndViewController{
     func setupUIData() {
         referenceImage.image = UIImage(contentsOfFile: viewModel.referenceImgUrl.path)
         userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
+        scoreValueLabel.text = viewModel.formattedScore
     }
     
     private func applyOrientationConstraints() {
@@ -156,7 +161,6 @@ extension IpadEndViewController{
             centerHomePortrait,
             topHomePortrait,
             centerTryPortrait
-            
         ])
         
         NSLayoutConstraint.deactivate([
@@ -190,8 +194,6 @@ extension IpadEndViewController{
             centerXTryLandscape,
             centerNextLandscape,
             topNextLandscape,
-            
         ])
     }
-
 }

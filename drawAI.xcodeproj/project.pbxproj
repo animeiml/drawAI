@@ -23,6 +23,7 @@
 		358BFFF4272997D500AFE0DD /* FileManagerStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */; };
 		35A10726273C0A8000738DB5 /* DrawToolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A10725273C0A8000738DB5 /* DrawToolsViewModel.swift */; };
 		35A1072A273C25CE00738DB5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A10729273C25CE00738DB5 /* RoundedButton.swift */; };
+		35C60620273DA1E5007994DD /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C6061F273DA1E5007994DD /* UIImage+Extensions.swift */; };
 		35C7E63C27336B73004BCCAC /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7E63B27336B73004BCCAC /* AppColors.swift */; };
 		35C7E63E27336BFE004BCCAC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */; };
 		35D5BE8327397903008A0E0A /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D5BE8127397903008A0E0A /* EndViewController.swift */; };
@@ -74,6 +75,7 @@
 		358BFFF3272997D500AFE0DD /* FileManagerStorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerStorageProvider.swift; sourceTree = "<group>"; };
 		35A10725273C0A8000738DB5 /* DrawToolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawToolsViewModel.swift; sourceTree = "<group>"; };
 		35A10729273C25CE00738DB5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		35C6061F273DA1E5007994DD /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		35C7E63B27336B73004BCCAC /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		35D5BE8127397903008A0E0A /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				354DE29A272196EC007FDC94 /* UIView+Extensions.swift */,
 				35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */,
 				353C40F7273D605500492BE9 /* UIImageView+Extensions.swift */,
+				35C6061F273DA1E5007994DD /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				35DC65532729AA2900A3FF22 /* DrawTimerBarView.swift in Sources */,
 				35760F8327205746004FEC9B /* HomeViewController.swift in Sources */,
 				35A10726273C0A8000738DB5 /* DrawToolsViewModel.swift in Sources */,
+				35C60620273DA1E5007994DD /* UIImage+Extensions.swift in Sources */,
 				35DC65572729AA2900A3FF22 /* DrawToolsView.swift in Sources */,
 				353C40F8273D605500492BE9 /* UIImageView+Extensions.swift in Sources */,
 			);

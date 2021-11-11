@@ -10,17 +10,18 @@ import Vision
 
 class EndViewController: UIViewController {
 
-    @IBOutlet weak var userDrawImage: UIImageView!
-    @IBOutlet weak var referenceImage: UIImageView!
-    @IBOutlet weak var imageView: UIView!
-    @IBOutlet weak var scoreView: UIView!
-    @IBOutlet weak var userDraw: UIView!
-    @IBOutlet weak var homeButton: UIButton!
-    @IBOutlet weak var tryAgainButton: UIButton!
-    @IBOutlet weak var nextRoundView: UIView!
-    @IBOutlet weak var nextRoundLabel: UILabel!
-    @IBOutlet weak var scorePercentLabel: UILabel!
-    @IBOutlet weak var nextRoundImageView: UIImageView!
+    @IBOutlet private weak var userDrawImage: UIImageView!
+    @IBOutlet private weak var referenceImage: UIImageView!
+    @IBOutlet private weak var imageView: UIView!
+    @IBOutlet private weak var scoreView: UIView!
+    @IBOutlet private weak var userDraw: UIView!
+    @IBOutlet private weak var homeButton: UIButton!
+    @IBOutlet private weak var tryAgainButton: UIButton!
+    @IBOutlet private weak var nextRoundView: UIView!
+    @IBOutlet private weak var nextRoundLabel: UILabel!
+    @IBOutlet private weak var scorePercentLabel: UILabel!
+    @IBOutlet private weak var scoreValueLabel: UILabel!
+    @IBOutlet private weak var nextRoundImageView: UIImageView!
     
     private let viewModel: EndViewModel
     
@@ -37,12 +38,21 @@ class EndViewController: UIViewController {
         viewModel.removeSavedImages()
     }
 
+    @IBAction func didTouchTryAgain(_ sender: Any) {
+        let drawVM: DrawViewModel = viewModel.buildDrawViewModel()
+        
+        let drawVC: DrawViewController = DrawViewController(viewModel: drawVM)
+        
+        navigationController?.pushViewController(drawVC, animated: true)
+    }
     @IBAction func didTouchHome(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func didTouchNextRound(_ sender: UIButton) {
-        // TODO: Go to next round
+        let drawVC: DrawViewController = DrawViewController()
+        
+        navigationController?.pushViewController(drawVC, animated: true)
     }
     
     required init?(coder: NSCoder) {
@@ -101,5 +111,6 @@ extension EndViewController {
     func setupUIData() {
         userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
         referenceImage.image = UIImage(contentsOfFile: viewModel.referenceImgUrl.path)
+        scoreValueLabel.text = viewModel.formattedScore
     }
 }

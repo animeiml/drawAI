@@ -48,6 +48,13 @@ extension DrawViewController {
     func setupUI() {
         view.backgroundColor = AppColors.backgroundColor
         
+        referenceImageImageView.layer.cornerRadius = canvasView.frame.height * 0.0549
+        referenceImageImageView.layer.borderWidth = 1
+        referenceImageImageView.layer.borderColor = AppColors.primaryColor.cgColor
+        referenceImageImageView.backgroundColor = AppColors.backgroundColor
+        referenceImageImageView.image = viewModel.randomReferenceImg
+        referenceImageImageView.grayscaleImage()
+        
         separatorView.backgroundColor = AppColors.primaryColor.withAlphaComponent(0.5)
         separatorView.layer.cornerRadius = separatorView.frame.height/2
         separatorView.layer.masksToBounds = true
@@ -67,7 +74,7 @@ extension DrawViewController: DrawTimerBarDelegate {
     func didFinishTime() {
         guard let drawing: UIImage = canvasView.captureDrawImage(),
               let drawingData: Data = drawing.pngData(),
-              let reference: UIImage = UIImage(named: "espadinha"),
+              let reference: UIImage = referenceImageImageView.image,
               let referenceData: Data = reference.pngData() else { return }
         
         viewModel.saveDrawingImgURL(drawingData)

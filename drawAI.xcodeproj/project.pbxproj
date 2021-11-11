@@ -12,6 +12,9 @@
 		3511395B27284A1700956CB6 /* DefaultsStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511395A27284A1700956CB6 /* DefaultsStorageProvider.swift */; };
 		35174883272AFFB10043E5CB /* iPadDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35174881272AFFB10043E5CB /* iPadDrawViewController.swift */; };
 		35174884272AFFB10043E5CB /* iPadDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35174882272AFFB10043E5CB /* iPadDrawViewController.xib */; };
+		353C40ED273D45A400492BE9 /* ReferenceImagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C40EC273D45A400492BE9 /* ReferenceImagesData.swift */; };
+		353C40F6273D597B00492BE9 /* ReferenceImages in Resources */ = {isa = PBXBuildFile; fileRef = 353C40F5273D597A00492BE9 /* ReferenceImages */; };
+		353C40F8273D605500492BE9 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C40F7273D605500492BE9 /* UIImageView+Extensions.swift */; };
 		354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29A272196EC007FDC94 /* UIView+Extensions.swift */; };
 		354DE29E27219718007FDC94 /* ANView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE29D27219718007FDC94 /* ANView.swift */; };
 		355EFA21272AD14A005E3735 /* EndViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355EFA20272AD14A005E3735 /* EndViewModel.swift */; };
@@ -60,6 +63,9 @@
 		3511395A27284A1700956CB6 /* DefaultsStorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageProvider.swift; sourceTree = "<group>"; };
 		35174881272AFFB10043E5CB /* iPadDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadDrawViewController.swift; sourceTree = "<group>"; };
 		35174882272AFFB10043E5CB /* iPadDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iPadDrawViewController.xib; sourceTree = "<group>"; };
+		353C40EC273D45A400492BE9 /* ReferenceImagesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceImagesData.swift; sourceTree = "<group>"; };
+		353C40F5273D597A00492BE9 /* ReferenceImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReferenceImages; sourceTree = "<group>"; };
+		353C40F7273D605500492BE9 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		354DE29A272196EC007FDC94 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		354DE29D27219718007FDC94 /* ANView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANView.swift; sourceTree = "<group>"; };
 		355EFA20272AD14A005E3735 /* EndViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewModel.swift; sourceTree = "<group>"; };
@@ -171,11 +177,20 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		353C40EB273D457B00492BE9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				353C40EC273D45A400492BE9 /* ReferenceImagesData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		354DE299272196CF007FDC94 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				354DE29A272196EC007FDC94 /* UIView+Extensions.swift */,
 				35C7E63D27336BFE004BCCAC /* UIColor+Extensions.swift */,
+				353C40F7273D605500492BE9 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +198,7 @@
 		354DE29C2721970A007FDC94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				353C40EB273D457B00492BE9 /* Data */,
 				35A10728273C25A000738DB5 /* Components */,
 				35C7E63A27336B53004BCCAC /* Colors */,
 				79B71D8927230D7900E209CD /* Fonts */,
@@ -346,6 +362,7 @@
 		79BB1FBC272043620099015C = {
 			isa = PBXGroup;
 			children = (
+				353C40F5273D597A00492BE9 /* ReferenceImages */,
 				79BB1FC7272043620099015C /* drawAI */,
 				79BB1FC6272043620099015C /* Products */,
 			);
@@ -450,6 +467,7 @@
 				79822642272BAF9F00DC7A57 /* HomeIpadViewController.xib in Resources */,
 				35D5BE8427397903008A0E0A /* EndViewController.xib in Resources */,
 				798AE179272836C7006CB063 /* Tuffy.ttf in Resources */,
+				353C40F6273D597B00492BE9 /* ReferenceImages in Resources */,
 				796BC31E27342BFB00BF12D9 /* IpadEndViewController.xib in Resources */,
 				79B71D8B2723107900E209CD /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
@@ -481,6 +499,7 @@
 				3511395B27284A1700956CB6 /* DefaultsStorageProvider.swift in Sources */,
 				35C7E63E27336BFE004BCCAC /* UIColor+Extensions.swift in Sources */,
 				35C7E63C27336B73004BCCAC /* AppColors.swift in Sources */,
+				353C40ED273D45A400492BE9 /* ReferenceImagesData.swift in Sources */,
 				35DC65552729AA2900A3FF22 /* CanvasView.swift in Sources */,
 				79BB1FC9272043620099015C /* AppDelegate.swift in Sources */,
 				354DE29B272196EC007FDC94 /* UIView+Extensions.swift in Sources */,
@@ -489,6 +508,7 @@
 				35760F8327205746004FEC9B /* HomeViewController.swift in Sources */,
 				35A10726273C0A8000738DB5 /* DrawToolsViewModel.swift in Sources */,
 				35DC65572729AA2900A3FF22 /* DrawToolsView.swift in Sources */,
+				353C40F8273D605500492BE9 /* UIImageView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

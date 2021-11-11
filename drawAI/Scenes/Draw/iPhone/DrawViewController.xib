@@ -57,7 +57,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-Tw-ZJj" userLabel="Separator">
-                    <rect key="frame" x="20" y="283" width="388" height="3"/>
+                    <rect key="frame" x="30" y="283" width="368" height="3"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="3" id="jWZ-dD-bMa"/>
@@ -69,11 +69,10 @@
             <constraints>
                 <constraint firstItem="sPH-Xz-m8v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Kq-lo-4OZ"/>
                 <constraint firstItem="83d-sM-vR1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="0Xu-cB-1vB"/>
+                <constraint firstAttribute="trailing" secondItem="Ta1-Tw-ZJj" secondAttribute="trailing" constant="30" id="2KK-e1-bTE"/>
                 <constraint firstItem="Ta1-Tw-ZJj" firstAttribute="top" secondItem="dQT-5B-eUi" secondAttribute="bottom" constant="25" id="41S-BH-Kd2"/>
                 <constraint firstItem="dQT-5B-eUi" firstAttribute="top" secondItem="83d-sM-vR1" secondAttribute="bottom" constant="20" id="605-zP-WjR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ycz-40-8Re" secondAttribute="trailing" id="Hlz-aJ-C6I"/>
-                <constraint firstItem="Ta1-Tw-ZJj" firstAttribute="leading" secondItem="83d-sM-vR1" secondAttribute="leading" id="MIn-2v-bZ5"/>
-                <constraint firstItem="Ta1-Tw-ZJj" firstAttribute="trailing" secondItem="83d-sM-vR1" secondAttribute="trailing" id="S9F-J7-i6H"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="83d-sM-vR1" secondAttribute="trailing" constant="20" id="WzC-iH-tiu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ycz-40-8Re" secondAttribute="bottom" id="XN7-sb-Oz1"/>
                 <constraint firstItem="83d-sM-vR1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YcD-RC-Bqb"/>
@@ -81,6 +80,7 @@
                 <constraint firstItem="Ycz-40-8Re" firstAttribute="top" secondItem="Ta1-Tw-ZJj" secondAttribute="bottom" constant="1" id="j7F-ZO-Q4D"/>
                 <constraint firstItem="Ycz-40-8Re" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ncX-gh-QDA"/>
                 <constraint firstItem="sPH-Xz-m8v" firstAttribute="top" secondItem="dQT-5B-eUi" secondAttribute="top" id="nfE-cY-H5z"/>
+                <constraint firstItem="Ta1-Tw-ZJj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="qnB-IR-d7u"/>
             </constraints>
             <point key="canvasLocation" x="131.77570093457942" y="100.43196544276459"/>
         </view>

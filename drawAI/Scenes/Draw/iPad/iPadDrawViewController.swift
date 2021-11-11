@@ -61,7 +61,6 @@ class iPadDrawViewController: UIViewController {
         
         timeBarView.startTimer()
         view.backgroundColor = AppColors.backgroundColor
-        referenceImageView.backgroundColor = AppColors.backgroundColor
         
         canvasView.layer.cornerRadius = canvasView.frame.height * 0.0549
         canvasView.layer.borderWidth = 1
@@ -70,7 +69,10 @@ class iPadDrawViewController: UIViewController {
         referenceImageView.layer.cornerRadius = canvasView.frame.height * 0.0549
         referenceImageView.layer.borderWidth = 1
         referenceImageView.layer.borderColor = AppColors.primaryColor.cgColor
-                
+        referenceImageView.backgroundColor = AppColors.backgroundColor
+        referenceImageView.image = viewModel.randomReferenceImg
+        referenceImageView.grayscaleImage()
+
         self.navigationController?.isNavigationBarHidden = true
     }
     
@@ -94,12 +96,12 @@ extension iPadDrawViewController: DrawTimerBarDelegate {
     func didFinishTime() {
         guard let drawing: UIImage = canvasView.captureDrawImage(),
               let drawingData: Data = drawing.pngData(),
-              let reference: UIImage = UIImage(named: "espadinha"),
+              let reference: UIImage = referenceImageView.image,
               let referenceData: Data = reference.pngData() else { return }
         
         viewModel.saveDrawingImgURL(drawingData)
         viewModel.saveReferenceImgURL(referenceData)
-                
+
         let finishedVC: IpadFinishedViewController = IpadFinishedViewController()
         
         navigationController?.pushViewController(finishedVC, animated: true)

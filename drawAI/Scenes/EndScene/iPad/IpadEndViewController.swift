@@ -134,6 +134,7 @@ extension IpadEndViewController{
     }
     
     func setupUIData() {
+        referenceImage.image = UIImage(contentsOfFile: viewModel.referenceImgUrl.path)
         userDrawImage.image = UIImage(contentsOfFile: viewModel.drawingImgUrl.path)
     }
     

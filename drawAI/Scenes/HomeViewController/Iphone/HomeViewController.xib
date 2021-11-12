@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="drawAI" customModuleProvider="target">
+            <connections>
+                <outlet property="startButton" destination="FF6-RI-50w" id="5rZ-kQ-rVu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="HomeViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF6-RI-50w">
+                    <rect key="frame" x="107" y="594" width="200" height="50"/>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.83470141890000005" blue="0.86667460200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Smh-3N-yjn"/>
+                        <constraint firstAttribute="height" constant="50" id="eCz-s2-b4S"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="START">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTouchStartButton:" destination="-1" eventType="touchUpInside" id="R81-XT-ntC"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-home" translatesAutoresizingMaskIntoConstraints="NO" id="AXO-6q-3rn">
+                    <rect key="frame" x="79.5" y="124" width="255" height="330"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="FF6-RI-50w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GAq-SY-uKv"/>
+                <constraint firstItem="FF6-RI-50w" firstAttribute="top" secondItem="AXO-6q-3rn" secondAttribute="bottom" constant="140" id="Hgd-8h-OMw"/>
+                <constraint firstItem="AXO-6q-3rn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="S4h-ZC-HWf"/>
+                <constraint firstItem="AXO-6q-3rn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vNc-W1-wno"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-home" width="255" height="330"/>
+        <namedColor name="background">
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

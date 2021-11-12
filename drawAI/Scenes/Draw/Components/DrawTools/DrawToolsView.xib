@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawToolsView" customModule="drawAI" customModuleProvider="target">
+            <connections>
+                <outlet property="eraserButton" destination="A31-Qo-1GN" id="jR5-u0-L2z"/>
+                <outlet property="pencilButton" destination="ri2-2H-Oep" id="Q51-Cp-HKf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri2-2H-Oep" userLabel="Pencil" customClass="RoundedButton" customModule="drawAI" customModuleProvider="target">
+                    <rect key="frame" x="9" y="8" width="72" height="72"/>
+                    <color key="tintColor" red="0.13333333333333333" green="0.30588235294117649" blue="0.92941176470588238" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="pencil" title="">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onPencilTouched:" destination="-1" eventType="touchUpInside" id="FNx-cR-wHR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A31-Qo-1GN" userLabel="Erase" customClass="RoundedButton" customModule="drawAI" customModuleProvider="target">
+                    <rect key="frame" x="9" y="100" width="72" height="72"/>
+                    <color key="tintColor" red="0.47450980392156861" green="0.47843137254901957" blue="0.4823529411764706" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="eraser"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onEraserTouched:" destination="-1" eventType="touchUpInside" id="hjj-fd-EwW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="ri2-2H-Oep" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="5i8-RP-waw"/>
+                <constraint firstItem="A31-Qo-1GN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7Y7-Pi-Jwk"/>
+                <constraint firstItem="ri2-2H-Oep" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="E4r-vy-3qy"/>
+                <constraint firstItem="A31-Qo-1GN" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-8" id="F1a-Ey-5hO"/>
+                <constraint firstItem="A31-Qo-1GN" firstAttribute="height" secondItem="ri2-2H-Oep" secondAttribute="height" id="JLx-sq-nzF"/>
+                <constraint firstItem="ri2-2H-Oep" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gZy-Rk-20o"/>
+                <constraint firstItem="ri2-2H-Oep" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="gk6-uK-J84"/>
+                <constraint firstItem="A31-Qo-1GN" firstAttribute="width" secondItem="ri2-2H-Oep" secondAttribute="width" id="ySh-QC-qKt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-67.200000000000003" y="412.89355322338832"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eraser" width="24.5" height="25"/>
+        <image name="pencil" width="25" height="25.5"/>
+        <namedColor name="background">
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

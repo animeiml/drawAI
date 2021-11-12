@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawViewController" customModule="drawAI" customModuleProvider="target">
+            <connections>
+                <outlet property="canvasView" destination="Ycz-40-8Re" id="Cgs-hi-H3e"/>
+                <outlet property="referenceImageImageView" destination="sPH-Xz-m8v" id="CCc-fF-PvP"/>
+                <outlet property="separatorView" destination="Ta1-Tw-ZJj" id="RjW-Nb-2Z6"/>
+                <outlet property="timerBarView" destination="83d-sM-vR1" id="fnd-oO-Q6k"/>
+                <outlet property="toolsView" destination="dQT-5B-eUi" id="Lca-Ev-0IT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" restorationIdentifier="DrawViewController" translatesAutoresizingMaskIntoConstraints="NO" id="83d-sM-vR1" customClass="DrawTimerBarView" customModule="drawAI" customModuleProvider="target">
+                    <rect key="frame" x="20" y="64" width="388" height="20"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.92156862745098034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="wbZ-bw-fYQ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="z0t-ew-6pq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQT-5B-eUi" customClass="DrawToolsView" customModule="drawAI" customModuleProvider="target">
+                    <rect key="frame" x="338" y="104" width="70" height="154"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="154" id="Bm6-Zq-N7x"/>
+                        <constraint firstAttribute="width" constant="70" id="T83-1C-VTl"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="dCs-Yz-Tht"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="154" id="vCn-sO-vXJ"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="espadinha" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-Xz-m8v" userLabel="referenceImageView">
+                    <rect key="frame" x="137" y="104" width="154" height="174"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="174" id="GOC-67-Sdc"/>
+                        <constraint firstAttribute="width" constant="154" id="Xrc-6L-u4T"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="hIz-y7-MwY"/>
+                        <constraint firstAttribute="height" constant="174" id="j7J-uP-Jt2"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycz-40-8Re" customClass="CanvasView" customModule="drawAI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="287" width="428" height="605"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-Tw-ZJj" userLabel="Separator">
+                    <rect key="frame" x="30" y="283" width="368" height="3"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="jWZ-dD-bMa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="sPH-Xz-m8v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Kq-lo-4OZ"/>
+                <constraint firstItem="83d-sM-vR1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="0Xu-cB-1vB"/>
+                <constraint firstAttribute="trailing" secondItem="Ta1-Tw-ZJj" secondAttribute="trailing" constant="30" id="2KK-e1-bTE"/>
+                <constraint firstItem="Ta1-Tw-ZJj" firstAttribute="top" secondItem="dQT-5B-eUi" secondAttribute="bottom" constant="25" id="41S-BH-Kd2"/>
+                <constraint firstItem="dQT-5B-eUi" firstAttribute="top" secondItem="83d-sM-vR1" secondAttribute="bottom" constant="20" id="605-zP-WjR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ycz-40-8Re" secondAttribute="trailing" id="Hlz-aJ-C6I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="83d-sM-vR1" secondAttribute="trailing" constant="20" id="WzC-iH-tiu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ycz-40-8Re" secondAttribute="bottom" id="XN7-sb-Oz1"/>
+                <constraint firstItem="83d-sM-vR1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YcD-RC-Bqb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dQT-5B-eUi" secondAttribute="trailing" constant="20" id="bsH-IH-0K9"/>
+                <constraint firstItem="Ycz-40-8Re" firstAttribute="top" secondItem="Ta1-Tw-ZJj" secondAttribute="bottom" constant="1" id="j7F-ZO-Q4D"/>
+                <constraint firstItem="Ycz-40-8Re" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ncX-gh-QDA"/>
+                <constraint firstItem="sPH-Xz-m8v" firstAttribute="top" secondItem="dQT-5B-eUi" secondAttribute="top" id="nfE-cY-H5z"/>
+                <constraint firstItem="Ta1-Tw-ZJj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="qnB-IR-d7u"/>
+            </constraints>
+            <point key="canvasLocation" x="131.77570093457942" y="100.43196544276459"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="espadinha" width="256" height="192"/>
+        <namedColor name="background">
+            <color red="0.99599999189376831" green="0.96899998188018799" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
